@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='1' b:layoutsVersion='2' b:responsive='true' b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <script>if ((window.location.protocol != &#39;http:&#39;))window.location.protocol = &#39;http&#39;;</script>
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/> <b:if cond='data:blog.isMobile'> <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/> <b:else/> <meta content='width=1100' name='viewport'/> </b:if> <b:include data='blog' name='all-head-content'/><meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+
+<include expiration='7d' path='*.css'/>
+<include expiration='7d' path='*.js'/>
+<include expiration='3d' path='*.gif'/>
+<include expiration='3d' path='*.jpeg'/>
+<include expiration='3d' path='*.jpg'/>
+<include expiration='3d' path='*.png'/>
+<meta content='sat, 02 jun 2020 00:00:00 GMT' http-equiv='expires'/>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='blogger' name='generator'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<link href='//www.blogger.com/openid-server.g' rel='openid.server'/>
+<link expr:href='data:blog.homepageUrl' rel='openid.delegate'/>
+<link expr:href='data:blog.url' rel='canonical'/>
+<b:if cond='data:view.isHomepage'>
+<title><data:blog.title/></title>
+<b:elseif cond='data:view.isPost or data:view.isPage or data:view.search.label'/>
+<title><data:blog.pageName/></title>
+<b:elseif cond='data:view.search.query'/>
+<title><data:view.search.resultsMessage/></title>
+<b:elseif cond='data:view.search and !data:view.search.label and !data:view.search.query'/>
+<title><data:blog.title/></title>
+<b:elseif cond='data:view.isArchive'/>
+<title><data:view.archive.rangeMessage/></title>
+<b:elseif cond='data:view.isError'/>
+<title>404 الصفحة غير موجودة </title>
+</b:if>
+<b:if cond='data:blog.searchLabel'>
+<meta content='noindex,nofollow' name='robots'/>
+</b:if>
+<b:if cond='data:blog.isMobile'>
+<meta content='noindex,nofollow' name='robots'/>
+</b:if>
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+<meta expr:content='data:blog.metaDescription' name='description'/>
+<script type='application/ld+json'>{ &quot;@context&quot;: &quot;http://schema.org&quot;, &quot;@type&quot;: &quot;WebSite&quot;, &quot;url&quot;: &quot;<data:blog.homepageUrl/>&quot;, &quot;potentialAction&quot;: { &quot;@type&quot;: &quot;SearchAction&quot;, &quot;target&quot;: &quot;<data:blog.homepageUrl/>?q={search_term}&quot;, &quot;query-input&quot;: &quot;required name=search_term&quot; } }</script>
+<b:if cond='data:blog.homepageUrl != data:blog.url'>
+<meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.pageTitle + &quot;, &quot; + data:blog.title' name='keywords'/>
+</b:if></b:if>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<meta content=' ' name='keywords'/></b:if>
+<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
+<link expr:href='&quot;http://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:if cond='data:blog.postImageThumbnailUrl'>
+<link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
+</b:if></b:if>
+<link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
+<link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://plus.google.com//posts' rel='publisher'/>
+<link href='https://plus.google.com//about' rel='author'/>
+<link href='https://plus.google.com/' rel='me'/>
+<meta content='بلدك' name='geo.placename'/>
+<meta content='اسمك' name='Author'/>
+<meta content='general' name='rating'/>
+<meta content='الحرفين الاولين من بلدك' name='geo.country'/>
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<meta expr:content='data:blog.pageName' property='og:title'/>
+<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+<meta content='article' property='og:type'/>
+</b:if>
+<meta expr:content='data:blog.title' property='og:site_name'/>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<meta expr:content='data:blog.metaDescription' name='description'/>
+<meta expr:content='data:blog.title' property='og:title'/>
+<meta content='website' property='og:type'/>
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' property='og:description'/>
+<b:else/>
+<meta expr:content='&quot;يرجى زيارة &quot; + data:blog.pageTitle + &quot; لتستفيد من الدروس و التدوينات.&quot;' property='og:description'/>
+</b:if>
+</b:if>
+<b:if cond='data:blog.postImageUrl'>
+<meta expr:content='data:blog.postImageUrl' property='og:image'/>
+<b:else/>
+<b:if cond='data:blog.postImageThumbnailUrl'>
+<meta expr:content='data:blog.postThumbnailUrl' property='og:image'/>
+<b:else/>
+<meta content='شعار الموقع' property='og:image'/>
+</b:if>
+</b:if>
+<meta content='https://www.facebook.com/' property='article:author'/>
+<meta content='https://www.facebook.com/' property='article:publisher'/>
+<meta content='id' property='fb:app_id'/>
+<meta content='id' property='fb:admins'/>
+<meta content='ar_AR' property='og:locale'/>
+<meta content='ar_AR' property='og:locale:alternate'/>
+<meta content='id_ID' property='og:locale:alternate'/>
+<meta content='summary' name='twitter:card'/>
+<meta expr:content='data:blog.pageTitle' name='twitter:title'/>
+<meta content='https://twitter.com/' name='twitter:site'/>
+<meta content='https://twitter.com/' name='twitter:creator'/>
+<link href='https://daneden.github.io/animate.css/animate.min.css' id='animate-css' media='all' rel='stylesheet' type='text/css'/>
+<link href='https://use.fontawesome.com/releases/v6.1.2/css/all.css' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/earlyaccess/droidarabickufi.css?ver=4.9.7' id='droidarabickufi-css' media='all' rel='stylesheet' type='text/css'/>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!-- /*<b:skin><![CDATA[*/
+/*
+Theme Name:TEMPLATE ChofMatch+
+Designer/Published: ChofMatch
+*/
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+.nobor{border:0!important;padding:0!important}
+body{margin:0}
+iframe,img{border-radius:10px}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+[hidden],template,.post-feeds,.blog-feeds{display:none}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:700}
+dfn{font-style:italic}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:1em 40px}
+hr{box-sizing:content-box;height:0}
+pre{overflow:auto}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}
+input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+.quickedit{display:none;}
+::-webkit-scrollbar {
+width: 10px;
+}
+::-webkit-scrollbar-thumb {
+border-radius: 10px;background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.44, #c0333673),color-stop(0.72, #c03336e8),color-stop(0.86, #c03336e8));
+}
+*{box-sizing:border-box}
+:before,:after{box-sizing:border-box}
+html{font-size:10px;-webkit-tap-highlight-color:transparent}
+input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
+a{color:#9e9caa;text-decoration:none}
+a:hover,a:focus{color:#23527c}
+a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+figure{margin:0}
+img{vertical-align:middle}
+a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{padding:0;border:0;outline:0;vertical-align:baseline;background:0 0}
+.img-responsive{display:block;max-width:100%;height:auto}
+.img-circle{border-radius:50%}
+hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}
+[role=button]{cursor:pointer}
+.container{margin-left:auto!important;margin-right:auto!important;padding-right:15px;padding-left:15px}
+@media(min-width:768px){.container{width:750px}}
+@media(min-width:992px){.container{width:970px}}
+@media(min-width:1085px){.container{width:1080px}}
+@media(min-width:1200px){.container{width:1160px}}
+.container-fluid{margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px}
+.row{margin-right:-15px;margin-left:-15px}
+.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-right:15px;padding-left:15px}
+.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{float:right}
+.col-xs-12{width:100%}
+.col-xs-11{width:91.66666667%}
+.col-xs-10{width:83.33333333%}
+.col-xs-9{width:75%}
+.col-xs-8{width:66.66666667%}
+.col-xs-7{width:58.33333333%}
+.col-xs-6{width:50%}
+.col-xs-5{width:41.66666667%}
+.col-xs-4{width:33.33333333%}
+.col-xs-3{width:25%}
+.col-xs-2{width:16.66666667%}
+.col-xs-1{width:8.33333333%}
+@media(min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:right}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}}
+@media(min-width:992px){.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{float:right}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.c-m-md-71{width:71%}.c-m-md-29{width:28%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}}
+.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}
+.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}
+.pull-left{float:left!important;font-family: 'Gloria Hallelujah', cursive;padding: 0px 17px;margin-top: 10px;font-size: 18px;color: rgba(35,82,124,.66);border-radius: 13px;}
+.pull-right{float:right!important}
+body .no-padding{padding-left:0!important;padding-right:0!important}
+ul{padding:0;margin:0}
+li{list-style:none}
+.hide{display:none!important}
+body{background-image:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiFy-R77GH7nVk2jsoFOEZaI0SPMEIVjyIBQTDd77FEOubpphpFREaoHa3jNJzH249IJqV-Qu0MpOVR_P_7a6HYhzJ0eOOkDQVGy1hBdVj0YhJSDfsk1e1C7SpojTQYU6CZJbchFW5pgcapD5Ab0JBsW3_jMDvSckRb3LAQYvEyzWgSGfRbyq57_H8sA/s389/wcPatternBg.png);background-color:#0D1440;color:#333;font-size:16px;line-height:1.42857143;font-family:droid arabic kufi;font-style:normal;font-weight:400}
+#error-404{text-align:center;margin:15px auto}
+.text_404{font-size:1000%;color:#fcb03b;font-weight:700;text-align:center;margin:15px auto;overflow:hidden;line-height:100%}
+.not-found{text-align:center}
+#header-wrapper{background:#BF1736;position:relative;display:block;float:right;width:100%;box-shadow:0 1px 3px rgba(0,0,0,.07);-ms-box-shadow:0 1px 3px rgba(0,0,0,.07);-webkit-box-shadow:0 1px 3px rgba(0,0,0,.07);border-radius: 0px 0 10px 10px}
+#header-content{display:block;padding:5px 0;color:#555;position:relative}
+
+.site-logo{width:80px;display:block}
+#Header1 h1,#Header1 a{font-size:20px;color:#fff;margin-bottom:0;margin-top:7px;display:flex;justify-content:center;align-items:center;}
+.descriptionwrapper p{margin:0;padding-top:2px;color:#ccc;font-size:13px}
+.site-logo img{width:auto;height:auto;max-width:100%;}
+#header-navbar{position:relative;float:right;padding-right:30px;width:calc(100% - 340px);margin-top:5px}
+#header-navbar li{display:inline-block;padding:3px 4px;width:23%;margin:0;float:right}
+#header-navbar li a{background:#0d14409e;padding:3px 10px 6px;display:block;color:#fff;font-size:17px;position:relative;border-radius:7px;text-align:center}
+#header-navbar li a:hover,#header-navbar .current-menu-item a,#main-wrapper #c-m-nav .current-menu-item a{background:#0d14404d;color:#fff}
+#menu-button{display:none}
+#header-navbar li .sub-menu{position:absolute;z-index:666;width:180px;display:none;text-decoration:none;transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-webkit-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;margin-top:-2px;padding-top:10px}
+#header-navbar li .sub-menu:before{content:"";position:absolute;border:solid 10px #3f414e;top:-9px;left:80px;height:20px;width:20px;border-top-color:transparent;border-left-color:transparent;border-right-color:transparent}
+#header-navbar li .sub-menu li{list-style:none;display:block;text-align:center;border-top:solid 1px #444;width:100%;padding-left:0;background:#3f414e}
+#header-navbar li .sub-menu li a{color:#fff;padding:10px 8px;background:0 0;border:0;font-size:16px}
+#header-navbar li .sub-menu li a:hover{background:rgba(0,0,0,.15)}
+#header-navbar li:hover .sub-menu{display:block}
+.header_soc-icon{float:left;width:190px}
+.header_soc-icon a{float:left;display:block;width:40px;height:40px;margin:3px 3px 0;color:#eee;text-align:center;line-height:44px;font-size:22px;border-radius:50%}
+#content-wrapper{display:block;clear:both;overflow:hidden;padding:5px 5px}
+#content-wrapper #main-wrapper{padding:12px;border-radius:20px;background:#ffffff0d;}
+#sidebar-wrapper{padding:12px!important;background: #ffffff0d;border-radius: 10px;;float:left}
+.c-m-live-table{display:block;overflow:hidden;width:100%;font-family:droid arabic kufi}
+.c-m-live-table img{max-width:100%;vertical-align:middle;border:0}
+.c-m-live-table .box-title{border-bottom:2px solid RGB(238,238,242);position:relative;display:block;width:100%;margin-bottom:15px;float:right}
+.c-m-live-table .box-title .title{float:right;color:#fff;}
+.box-title .title .fa{width:1.3em;margin-left:5px;font-size:15px;color:#c21d39}
+.c-m-live-table .box-title .title:before,.c-m-live-table .box-title .title:after{display:none;content:inherit}
+.c-m-live-table .box-title:before{right:0!important}
+div.tab{display:inline-block;text-align:right;margin-top:2px;padding:2px 5px;margin-bottom:0;line-height:0;position:relative;z-index:55;float:left}
+div.tab button{float:right;outline:0;cursor:pointer;padding:0 15px 1px;-webkit-transition:.3s;transition:.3s;height:27px;font-size:14px;border:solid #e8e8e8 1px;margin-top:-3px}
+div.tab button:hover{background-color:#55153c}
+div.tab button.active{background:#c21d39;border:none;color:#fff}
+.tabcontent{display:none}
+#today{display:block}
+.contents{padding:0;position:relative;overflow:hidden;float:right;width:100%;display:block}
+.c-m_sports_events-event_item{text-align:center;width:100%;display:block;overflow:hidden;margin-bottom:10px;position:relative;border:none;background:#fff;border-radius: 10px;}
+.center-col{width:calc(100% - 360px);overflow:hidden;float:right;text-align:center}
+#c-m_sports_events{border:1px solid #edf0f3}
+.c-m_sports_events-event_mask{position:absolute;top:0;right:0;bottom:0;left:0;display:none;z-index:8}
+.event_mask_inner{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:100%;background:rgba(0,0,0,.63);display:-webkit-box;display:-ms-flexbox;display:flex}
+.c-m_sports_events-event_mask_inner_text{margin-top:0!important;background-color:#c5223c;color:#fff!important;padding:5px 30px;font-size:14px!important;line-height:22px;text-decoration:none;z-index:555;border-radius: 10px;}
+.c-m_sports_events-event_item:hover .c-m_sports_events-event_mask{display:block}
+.event_inner{margin:0;width:100%;float:right;border-bottom:1px solid #19222c;background:#110f3c;padding:10px 0 5px;position:relative}
+.live{position:relative;top:-3px}
+.live span{background:red;border-radius:2px;display:inline-block;position:relative;line-height:21px;letter-spacing:-.3px;padding:0 17px 3px;color:#fff;font-weight:100;font-size:13px}
+.red{background-color:RGB(255,46,46)!important}
+.team-first{text-align:left}
+.team-aria{position:relative;float:right;width:calc(50% - 100px);padding:0 5px}
+.team-first .c-m-team_logo{display:inline-block;text-align:left;float:left;margin-right:6px}
+.c-m-team_logo img{display:block;margin:0 auto 10px;max-height:40px;width:auto}
+.c-m_sports_events-team_title{font-size:15px;display:inline-block;color:#fff;font-weight:100;margin-top:10px;letter-spacing:-.5px}
+.team-second{text-align:right}
+.team-second .c-m-team_logo{display:inline-block;text-align:right;float:right;margin-left:10px}
+.event_title_wrapper{text-align:center;padding:5px 0;float:right;width:200px}
+.events-team_score{display:inline-block;width:23px;font-weight:700;font-size:21px;color:#666}
+.event_status_inner_coming{display:inline-block;width:120px;font-weight:700;color:RGB(0,175,216)}
+.comming-soon{color:#fff;background-color:#8ad919;padding:4px 2px;border:1px solid transparent;border-radius:2px;line-height:15px;font-family:helvetica neue,Helvetica,Arial,sans-serif;font-size:13px;margin:0 -2px}
+.ended span{background:#333;display:inline-block;padding:0 17px 1px;color:#fff;font-weight:100;font-size:14px;top:-2px;position:relative}
+.dark{background:#000!important;color:#fff}
+.events-info{padding:3px 0;background:#110f3c;border-bottom:1px solid #19222c;width:100%;float:right;color:#fff;font-size:12px}
+.events-info span{padding:0 10px;float:right;width:33.33333333%}
+.events-info .fa{color:#c21d39;padding-left:5px}
+span .fa-television{font-size:11px}
+.c-m_match_card{display:block;background:url(images/card-bg.jpg);overflow:hidden;width:100%;background-color:#0a1105;margin-bottom:-11px;position:relative;z-index:111}
+.c-m_card_inner{display:block;overflow:hidden;width:100%;padding:20px 5px}
+.c-m_card_inner .team-aria{width:calc(50% - 150px);padding:0}
+.c-m-card_team_logo{display:block;text-align:center;margin-bottom:5px}
+.c-m-card_team_logo img{width:100px;height:auto}
+.c-m_card-team_title{color:#eee;text-align:center;font-size:17px;margin-bottom:10px;font-weight:700}
+.c-m_match_title_wrapper{display:inline-block;width:300px;float:right;margin-top:50px;text-align:center;color:#fff;font-size:20px;font-weight:700}
+.c-m_match_card .event_status_inner_coming{width:170px}
+.c-m_match_card .events-team_score{color:#fff;font-size:37px;font-weight:100}
+.c-m_match_card .events-info{background:0 0;color:#ddd;font-size:14px;text-align:center;padding-bottom:7px;border-top:solid 2px #333;padding-top:9px}
+.commenter{padding-left:10px;display:inline-block}
+.chanels-fix{text-align:right;padding-right:10px;display:inline-block}
+.chanels-commenter{padding-left:15px;display:inline-block;text-align:right}
+.chanels-commenter a{color:#3c4b7b}
+.orange{background:orange!important}
+.gray{background:gray!important}
+#sidebar-wrapper .c-m-live-table{margin-bottom:15px}
+#sidebar-wrapper .c-m-live-table .box-title .title{padding-left:0!important;font-size:16px!important;float:none!important;display:block!important;background:#eee!important;padding-top:7px!important;padding-bottom:7px!important}
+#sidebar-wrapper .c-m-live-table div.tab{width:100%!important;padding:0!important}
+#sidebar-wrapper .c-m-live-table div.tab .tablinks{width:33.33%!important}
+#sidebar-wrapper .event_title_wrapper{margin-top:12px;text-align:center;padding:5px 0;float:right;width:140px}
+#sidebar-wrapper .event_inner .team-aria{margin-bottom:7px}
+#sidebar-wrapper .event_inner .team-first,#sidebar-wrapper .event_inner .team-second{text-align:center;display:block}
+#sidebar-wrapper .event_inner .team-aria .c-m-team_logo{display:block;text-align:center;float:none;margin:0;width:100%}
+#sidebar-wrapper .event_inner .c-m-team_logo img{margin:0 auto 5px}
+#sidebar-wrapper .c-m_sports_events-team_title{font-size:12px;margin-top:0;float:right;text-align:center;width:100%;font-weight:100;line-height:15px}
+#sidebar-wrapper .event_inner .team-aria{width:calc(50% - 70px)}
+#sidebar-wrapper .event_inner .event_status_inner_coming{width:80px}
+#sidebar-wrapper .event_inner .event_status_inner_coming .live span{font-size:11px}
+#sidebar-wrapper .events-info span:nth-last-of-type(2){display:none}
+#sidebar-wrapper .events-info span{padding:0 5px;width:50%}
+@media(max-width:600px){.event_title_wrapper{margin-top:12px;text-align:center;padding:5px 0;float:right;width:140px}.event_inner .team-aria{margin-bottom:7px}.event_inner .team-first,.event_inner .team-second{text-align:center;display:block}.event_inner .team-aria .c-m-team_logo{display:block;text-align:center;float:none;margin:0;width:100%}.event_inner .c-m-team_logo img{margin:0 auto 5px}.c-m_sports_events-team_title{font-size:12px;margin-top:0;float:right;text-align:center;width:100%;font-weight:100;line-height:15px}.event_inner .team-aria{width:calc(50% - 70px)}.event_inner .event_status_inner_coming{width:80px}.event_inner .event_status_inner_coming .live span{font-size:11px}.events-info span:nth-last-of-type(2){display:none}.events-info span{padding:0 5px;width:50%}}
+#main-wrapper .c-m-widget{display:block;width:100%;padding:12px;float:right;overflow:hidden;margin-bottom:15px}
+.c-m-video,.c-m-channel .widget{display:block;overflow:hidden}
+.box-title{font-family:droid arabic kufi;border-bottom:2px solid RGB(238,238,242);position:relative;display:block;width:100%;text-align:center}
+.box-title::before{background:#BF1736;content:"";height:3px;position:absolute;width:24px;bottom:-2px;right:auto;left:calc(50% - 12px)!important}
+.box-title .title{float:none;display:inline-block;padding-bottom:10px;margin-top:0;margin-bottom:0;font-size:19px;position:relative;font-weight:100;color: #fff;}
+.box-title .title::before,.box-title .title::after{position:absolute;content:"";background:#fff;height:8px;width:8px;border-radius:50%;top:13px;right:-26px}
+.box-title .title::after{left:-26px;right:auto!important}
+.c-m-video,.c-m-channel .widget-content,.box-content{overflow:hidden;margin-top: 15px;}
+.c-m-video,.c-m-channel li.item-post,.post-outer{padding:7px}
+.inner-content{position:relative;display:block;width:100%;height:140px;overflow:hidden;direction:rtl;border-radius: 15px}
+.post-thumbnail{display:block;float:right;width:100%;height:100%;overflow:hidden}
+.c-m-tumb{height:100%;display:block;width:100%;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+.inner-content:hover .c-m-tumb{-webkit-transform:scale(1.1);transform:scale(1.1)}
+.c-m-tumb::before{content:"\f04b";font-family:FontAwesome;line-height:32px;width:37px;height:37px;font-size:14px;color:#fff;text-align:center;background-color:rgba(0,0,0,.18);font-weight:100;position:absolute;top:calc(50% - 27px);left:calc(50% - 20px);opacity:1;z-index:3;padding:0 0 0 2px;border:3px solid #fff;border-radius:50%;-webkit-transition:transform 400ms cubic-bezier(.52,1.64,.37,.66),color 400ms cubic-bezier(.52,1.64,.37,.66);-webkit-transition:color 400ms cubic-bezier(.52,1.64,.37,.66),-webkit-transform 400ms cubic-bezier(.52,1.64,.37,.66);transition:color 400ms cubic-bezier(.52,1.64,.37,.66),-webkit-transform 400ms cubic-bezier(.52,1.64,.37,.66);transition:transform 400ms cubic-bezier(.52,1.64,.37,.66),color 400ms cubic-bezier(.52,1.64,.37,.66);transition:transform 400ms cubic-bezier(.52,1.64,.37,.66),color 400ms cubic-bezier(.52,1.64,.37,.66),-webkit-transform 400ms cubic-bezier(.52,1.64,.37,.66)}
+.c-m-tumb::after{background:rgba(0,0,0,.61);position:absolute;width:100%;content:"";height:100%;opacity:1;z-index:1}
+.inner-content:hover .c-m-tumb:before{transform:scale(1.2) translate(0,0);-webkit-transform:scale(1.2) translate(0,0);-o-transform:scale(1.2) translate(0,0);-moz-transform:scale(1.2) translate(0,0);-ms-transform:scale(1.2) translate(0,0);z-index:11}
+.post-lable{position:absolute;top:10px;right:7px;z-index:2;font-size:0}
+.post-categories{padding:0;margin:0;line-height:15px}
+.post-lable a:first-child{display:inline-block}
+.post-lable a{display:none}
+.post-lable a{background-color:#fdb03c;padding:0 4px;color:#000;text-transform:uppercase;font-size:11px;font-weight:100}
+.rnav-conent,.details{display:block;position:absolute;bottom:0;z-index:2;width:100%}
+.details .c-m-Title{padding:7px 10px 8px;font-size:12px;line-height:16px;margin:0;font-weight:100;background:-webkit-linear-gradient(top,transparent 0%,rgba(0,0,0,0.7) 100%);background:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,0.7) 100%)}
+.c-m-Title{margin:0;font-size:14px;padding:5px;line-height:20px}
+.c-m-Title a,.details a{color:#eee;bottom:0;position:relative;float:right;display:block;width:100%}
+.post-meta{font-size:11px;font-family:tahoma;font-weight:700;color:#999;padding:0 15px}
+.post-meta a{color:#999}
+.icomments{margin-left:8px}
+#main-wrapper #c-m-nav{text-align:center;position:relative;display:block}
+#main-wrapper #c-m-nav li{display:inline-block;margin:2px}
+#main-wrapper #c-m-nav li a{border-radius:4px;padding:1px 25px 0;border:solid 1px #dbdbd7;font-weight:100;font-size:16px;background:#f0f0f0;height:33px;line-height:26px;color:#000;display:block}
+#main-wrapper #c-m-nav li a:hover{background:#0d14404d;color:#fff}
+.single .post-outer{height:auto}
+.single .post-outer .post{display:block;overflow:hidden;height:auto!important}
+.breadcrumbs{z-index:3;height:45px;padding:0 15px;border-bottom:1px solid #ebedf0;display:block;overflow:hidden;margin:-12px -12px 0;direction:rtl;}
+.bhome a .fa{width:30px;height:100%;margin:0 0 0 10px;padding-left:13px;text-align:center;border-left:1px solid #e9eef2;font-size:17px!important;line-height:50px}
+.breadcrumbs span,.breadcrumbs a{text-align:right;color:#8385ac;font-size:13px;font-weight:300;line-height:45px}
+.breadcrumbs .fa{color:#bcc1d4;font-size:9px;font-weight:700;margin:0 8px;vertical-align:middle}
+.entry-title{position:relative;z-index:2;padding:10px 14px;text-align:center;display:block;font-size:20px;line-height:24px;font-family:droid arabic kufi;background:#901c3b;color:#eee;border-radius: 10px;}
+.single .post-meta{padding:0 15px 10px;background:0 0;color:#999}
+.single .post-meta a{color:#999}
+.single .post-meta span{margin-left:5px;display:inline-block}
+.post-body{line-height:28px;font-size:15px;font-weight:100}
+.post-body img{max-width:100%;height:auto;margin:10px auto}
+.navigation{clear:both;display:block;width:100%}
+.post img{max-width:100%;height:auto}
+.status-msg-hidden{text-align:center;padding:10px;border:solid 1px #ccc;width:98%;margin:0 auto 10px}
+.status-msg-hidden .cat-name{display:inline-block;color:#fcb03b;padding:0;margin:0}
+.status-msg-hidden h1{margin:5px 0;font-size:17px;display:block}
+.sharepost h4{font-size:15px;position:relative;overflow:hidden;margin:0 0 20px;font-weight:700;padding:0 10px;text-align:center;text-transform:uppercase;-webkit-transition:all .5s ease-out 0s;transition:all .5s ease-out 0s;color:rgba(47,4,17,.59)}
+.sharepost h4:after{content:"";position:absolute;width:8px;height:7px;border-radius:50%;bottom:2px;right:52%;box-shadow:1em 0 0 0 #1a9eda,2em 0 0 0 #e99393;background:none repeat scroll 0% 0% #e99393}
+.sharepost h4 span{padding-bottom:12px;display:inline-block}
+.sharepost li{width:33.33%;padding:6px;float:right;list-style:none}
+.sharepost li a{padding:0;color:#fff;display:block;border-radius:2px;overflow:hidden;line-height:37px;text-align:center}
+.sharepost li a .fa{margin-left:3px;border-radius:3px;float:right;padding:10px 13px;background:rgba(0,0,0,.38) none repeat scroll 0% 0%}
+.sharepost{overflow:hidden;text-align:center;margin-bottom:20px;margin-top:25px}
+.sharepost li a:hover{opacity:.8}
+.sharepost li .twitter{background-color:#55acee}
+.sharepost li .facebook{background-color:#3b5998}
+.sharepost li .gplus{background-color:#dd4b39}
+.sharepost li .pinterest{background-color:#cc2127}
+.sharepost li .linkedin{background-color:#0976b4}
+#related-posts #next,#related-posts #prev{-webkit-transition:all .4s ease-in-out 0s;transition:all .4s ease-in-out 0s}
+#related-posts #next{background:none repeat scroll 0% 0% #333;cursor:pointer;display:block;font-size:30px;height:30px;overflow:hidden;padding:7px 3px 5px 5px;position:absolute;right:0;text-align:center;top:40%;width:30px;z-index:10}
+#related-posts #prev{background:none repeat scroll 0% 0% #333;cursor:pointer;display:block;font-size:30px;height:30px;left:0;overflow:hidden;padding:7px 5px 5px 3px;position:absolute;text-align:center;top:40%;width:30px;z-index:10}
+#related-posts:hover #prev{left:0;opacity:.9;z-index:100}
+#related-posts:hover #next{opacity:.9;right:0;z-index:100}
+#next:after,#prev:after{color:#fff;content:"\f105";display:block;font-family:FontAwesome;font-size:25px;font-style:normal;font-weight:400;line-height:17px;margin-top:0;text-align:center}
+#prev:after{color:#fff;content:"\f104";display:block;font-family:FontAwesome;font-size:25px;font-style:normal;font-weight:400;line-height:17px;margin-top:0;text-align:center}
+#related-posts{margin-bottom:20px;overflow:hidden;direction:ltr;position:relative;width:100%;display:block}
+.rnav li{cursor:move!important;display:block;float:left;height:auto;overflow:hidden;padding:0 4px!important;position:relative;width:100%}
+.owl-item{float:left}
+.c-m-related{position:relative}
+.rnav li .rnav-img{width:100%;height:165px;display:block}
+.rnav li:hover .rnav-img{opacity:.7;-webkit-transition:all .5s ease 0s;transition:all .5s ease 0s}
+#related_postsp .box-title{margin-bottom:15px;font-size:11px}
+#related_postsp{display:inline-block;width:100%;margin:20px 0;padding:0}
+.rnav-title{padding:10% 15px 13px;font-size:14px;line-height:18px;font-family:droid arabic kufi;margin:0;text-align:right}
+.rnav-title a{font-weight:700!important;color:#fff}
+.pagination{clear:both;margin:19px 0 15px;font-size:13px;font-weight:400;text-align:center;float:right;position:relative}
+.nav-links{display:inline-block;position:relative;z-index:1}
+.pagination .prev,.pagination .next{background-color:#c5223c;line-height:34px;font-size:23px}
+.pagination .current,.pagination a:hover{background-color:#0c133f;color:#fff}
+.pagination span,.pagination a{display:inline-block;background-color:#c5223c;color:#fff;margin:0;line-height:30px;height:33px;padding:0 12px;-webkit-transition:all .2s;transition:all .2s;font-family:serif;float:right;font-size:19px}
+.pagination .screen-reader-text{display:none}
+#video_box-2 .prev{font-family:'Droid Arabic Kufi';font-size:15px;padding:0 50px}
+#adsmobandcomp,#sas{position:absolute}
+.teams{display:block;text-align:center}
+.teams li{display:inline-block;border:1px #e3e1e1 solid;margin:4px;padding:0;width:105px;text-align:center}
+.teams li span{height:105px;display:block;overflow:hidden}
+.teams li img{max-width:100%;height:auto;width:100%;padding:12px 8px 5px}
+.teams li p{background:RGB(245,245,245);padding:5px 2px;font-size:12px;color:RGB(29,142,224);margin:5px auto 0;height:29px;overflow:hidden;letter-spacing:-.5px}
+#sidebar-wrapper .widget{margin-bottom:20px;overflow:hidden;display:block}
+#sidebar-wrapper .widget .title{float:none;display:block;padding-bottom:8px;margin-bottom:10px;margin-top:0;font-size:16px;color:#fff;border-bottom:2px solid RGB(238,238,242);position:relative;font-weight:100;direction: rtl;}
+#sidebar-wrapper .widget .title:before{background:#c21d39;content:"";height:3px;position:absolute;width:36px;bottom:-1.5px}
+.sidebar-post ul li{float:right;width:50%;padding:2.5px}
+.sidebar-post ul li:first-child{width:100%!important}
+.sidebar-post ul li:first-child .inner-content{height:230px}
+.sidebar-post ul li:first-child .post-lable{display:block}
+.sidebar-post ul li:first-child .inner-content .c-m-Title{font-size:15px;line-height:19px}
+.sidebar-post ul li .post-lable{display:none}
+.sidebar-post ul li .inner-content{position:relative;display:block;width:100%;height:100px;overflow:hidden}
+.sidebar-post ul li .details .c-m-Title{padding:10% 6px 5px;font-size:10px;line-height:12px}
+.social-icons .fa-google{background:#f92552}
+.social-icons .fa-instagram{background-color:#9d54aa}
+.social-icons .fa-facebook{background-color:#43609c}
+.social-icons .fa-twitter{background-color:#32b8e4}
+.social-icons .fa-rss{background-color:#ffbf13}
+.fa.fa-google-plus:hover,.social-icons .fa-google-plus{background-color:#dd4b39!important}
+.fa.fa-linkedin:hover,.social-icons .fa-linkedin{background-color:#0976b4!important}
+.fa.fa-youtube:hover,.social-icons .fa-youtube{background-color:#e52d27!important}
+.social-icons a{position:relative;display:block;margin-top:8px;padding:6px 0;border-radius:3px;overflow:hidden;width:calc(50% - 5px);float:right;height:80px;margin-right:10px}
+.social-icons a:nth-of-type(2n+1){margin-right:0}
+.social-icons a{text-align:center;color:#fff;font-size:30px}
+.social-icons span{font-family:Tahoma;position:relative;color:#fff;text-transform:capitalize;font-size:12px;text-align:center;background:rgba(255,255,255,.33);padding:8px;border-radius:3px;display:block;text-align:center;margin:6px auto;width:80%}
+#footer-wrapper{display:block;padding-top:0;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.07);-ms-box-shadow:0 1px 3px rgba(0,0,0,.07);-webkit-box-shadow:0 1px 3px rgba(0,0,0,.07)}
+#footer-wrapper p{margin: 0;}
+#footer-wrapper .social{float:right}
+#footer-wrapper .social a{display:inline-block;padding:9px;font-size:20px;margin-top:0}
+.copyright{background:#c21d39;display:block;padding-top:5px;padding-bottom: 10px;border-bottom:6px;border-radius: 25px 25px 0 0;}
+.social-icon a{float:left;display:block;width:30px;height:30px;margin:10px 3px 0;background:rgba(68,68,68,.38);color:#eee;text-align:center;line-height:34px;font-size:15px;border-radius:50%}
+.social-icon a:hover{background:rgba(68,68,68,.61)}
+div.tab button{background:#110f3c;color:#fff;border-radius:10px;margin:5px;border:none;}
+.design_copyright a{color:rgba(35,82,124,.66)}
+@media screen and (max-width:1090px){#header-navbar{padding-right:0}}
+@media screen and (max-width:991px){ #header-logo {margin: 0 auto;} #sidebar-wrapper {display: none;} .header_soc-icon {display: none;} #header-wrapper{background:#c5223c;height:50px}#header-content{padding:0}.header_soc-icon{margin-left:60px;width:144px}.header_soc-icon a{width:30px;height:30px;margin:10px 3px 0;color:#fff;text-align:center;line-height:35px;font-size:20px}#header-navbar{display:block;padding:0!important;float:left;width:100%;position:absolute;top:50px;left:0;margin:0}#menu-button{display:inline-block;color:#fff;font-size:34px;cursor:pointer;font-weight:100;margin:0;overflow:hidden;float:left!important;margin-top:-50px;height:50px;text-align:center;width:50px;line-height:0;padding:10px 0}#menu-button .fa{height:30px;padding:0;margin:0;line-height:30px}#header-navbar #nav{display:none;width:100%;position:absolute;background:#55153c;top:0;z-index:999;height:auto;padding-bottom:10px;right:0;margin:0;padding:0;border-top:solid 1px rgba(221,221,221,.1);border-radius: 0px 0 10px 10px;}#header-navbar li{display:block;width:100%}#header-navbar li a{color:#fff;background:0 0!important;border:0;padding:10px;font-weight:100;border-top:solid 1px rgba(221,221,221,.1);border-radius:0}#sidebar-wrapper,#main-wrapper{margin-left:0;margin-right:0}#header-navbar li .sub-menu{display:block;position:relative;background:0 0;width:80%;margin-right:15%}#header-navbar li .sub-menu li a{font-size:13px;text-align:right;padding:4px}}
+@media screen and (max-width:769px){#sidebar-wrapper,#main-wrapper{padding:0 8px}.sharepost li{padding:2px;margin:0;border:0;font-size:0}.sharepost li a{padding:0;color:#fff;display:block;border-radius:2px;overflow:hidden;line-height:0;text-align:center;font-size:0}.sharepost li a .fa{font-size:20px;width:100%;background:none repeat scroll 0% 0% transparent}.c-m_match_card{padding:0 12px!important}.c-m_card_inner .team-aria{width:calc(50% - 100px)!important;padding:0}body .c-m-card_team_logo img{width:70px;height:auto}.c-m_match_title_wrapper{width:200px!important;margin-top:36px!important}body .c-m_match_card .event_status_inner_coming{max-width:120px}}
+@media screen and (max-width:480px){.c-m-video,.c-m-channel li.item-post,.post-outer{width:100%;padding:5px 0}.c-m-live-table .box-title .title{padding-left:0!important;font-size:18px!important;float:none!important;display:block!important;padding-top:7px!important;padding-bottom:7px!important}div.tab{width:100%!important;padding:0!important}div.tab .tablinks{width:30%!important}.c-m-live-table .box-title:before{display:none}}
+@media screen and (max-width:290px){.header_soc-icon{display:none!important}}
+@media (min-width: 768px) {#header-logo {float: right;width: 150px;display: inline-block;}}
+]]></b:skin>
+<style type='text/css'>#largebanner2{display:none}<b:if cond='data:view.isHomepage'>#main{display:none}</b:if><b:if cond='data:view.isMultipleItems'>.largebanner .widget{padding:10px;margin:20px auto;max-width:900px;overflow:hidden;margin-bottom:20px}</b:if><b:if cond='data:view.isPage'>#content-wrapper #main-wrapper{margin-bottom:2%}#largebanner2{display:block}#sidebar-wrapper{display:none!important}.largebanner .widget{padding:10px;margin:20px auto;max-width:900px;overflow:hidden;margin-bottom:20px}</b:if></style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'/>
+<b:tag name='script'>
+<b:if cond='data:view.isError'>
+window.location.href = &quot;<data:blog.homepageUrl/>&quot;;
+</b:if>
+<b:if cond='data:view.isPost'>
+$(function(){&quot;use strict&quot;
+$(&quot;#postAD-top&quot;).append($(&quot;#HTML201&quot;)),$(&quot;#postAD-bottom&quot;).append($(&quot;#HTML203&quot;)),$(&quot;#postAD-center&quot;).append($(&quot;#HTML202&quot;))})
+</b:if>
+</b:tag>
+</head>
+<body expr:class='!data:view.isMultipleItems ? &quot;single&quot; : &quot;&quot;'> 
+<header id='header-wrapper'>
+<div class='container no-padding' id='header-content'>
+<b:section class='header-logo' id='header-logo' maxwidgets='1' showaddelement='no'>
+  <b:widget id='Header1' locked='true' title='شوف ماتش (رأس الصفحة)' type='Header' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'/>
+      <b:widget-setting name='displayHeight'>0</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>1410</b:widget-setting>
+      <b:widget-setting name='useImage'>false</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+      <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+      <b:widget-setting name='displayWidth'>0</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+
+  <b:if cond='data:useImage'>
+    <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
+      <b:if cond='data:mobile'>
+          <div id='header-inner'>
+            <div class='titlewrapper' style='background: transparent'>
+              <h1 class='title' itemprop='headline' style='background: transparent; border-width: 0px'>
+                <b:include name='title'/>
+              </h1>
+            </div>
+            <b:include name='description'/>
+          </div>
+        <b:else/>
+          <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                        + &quot;background-position: &quot;                        + data:backgroundPositionStyleStr + &quot;; &quot;                        + data:widthStyleStr                        + &quot;min-height: &quot; + data:height                        + &quot;_height: &quot; + data:height                        + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
+            <div class='titlewrapper' style='background: transparent'>
+              <h1 class='title' style='background: transparent; border-width: 0px'>
+                <b:include name='title'/>
+              </h1>
+            </div>
+            <b:include name='description'/>
+          </div>
+        </b:if>
+    <b:else/>
+      <!--Show the image only-->
+        <a class='site-logo' expr:href='data:blog.homepageUrl' style='display: block'>
+          <img class='no-grav header-image' expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
+        </a>
+        <!--Show the description-->
+        <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
+          <b:include name='description'/>
+		  <b:if cond='data:blog.pageType in {&quot;item&quot;,&quot;static_page&quot;}'>
+			<p style='text-indent:-9999px;margin:0 0 0 0;padding:0 0 0 0;height:0px;'><b:include name='title'/></p>
+			<b:else/>
+			<h1 style='text-indent:-9999px;margin:0 0 0 0;padding:0 0 0 0;height:0px;'><b:include name='title'/></h1>
+		  </b:if>
+        </b:if>
+    </b:if>
+  <b:else/>
+    <!--No header image -->
+    <div id='header-inner'>
+      <div class='titlewrapper'>  	
+        <b:if cond='data:blog.pageType in {&quot;item&quot;,&quot;static_page&quot;}'>
+		  <p class='title'><b:include name='title'/></p>
+		<b:else/>
+          <h1 class='title'><b:include name='title'/></h1>
+		</b:if>
+	    <b:include name='description'/>
+      </div>
+	</div>
+  </b:if>
+</b:includable>
+    <b:includable id='description'>
+  <div class='descriptionwrapper'>
+    <p class='description' itemprop='description'><span><data:description/></span></p>
+  </div>
+</b:includable>
+    <b:includable id='title'>
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <data:title/>
+  <b:else/>
+    <a expr:href='data:blog.homepageUrl' expr:title='data:title' itemprop='url'><span itemprop='name'><data:title/></span></a>
+  </b:if>
+</b:includable>
+  </b:widget>
+</b:section><!-- end logo -->
+<b:section class='header-navbar' id='header-navbar' preferred='yes'>
+  <b:widget id='LinkList1' locked='false' title='' type='LinkList' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='link-3'>#</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='text-1'>القنوات</b:widget-setting>
+      <b:widget-setting name='link-1'>#</b:widget-setting>
+      <b:widget-setting name='text-0'>فيديوهات</b:widget-setting>
+      <b:widget-setting name='link-2'>#</b:widget-setting>
+      <b:widget-setting name='text-3'>شراء القالب</b:widget-setting>
+      <b:widget-setting name='link-0'>#</b:widget-setting>
+      <b:widget-setting name='text-2'>جدول المباريات</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+   <ul>
+     <b:loop values='data:links' var='link'>
+       <li><a expr:href='data:link.target'><data:link.name/></a></li>
+     </b:loop>
+   </ul>
+<!--<b:include name='quickedit'/>-->
+<script type='text/javascript'> 
+//<![CDATA[
+$("#LinkList1").each(function(){var e="<div class='pull-right' id='menu-button'><i aria-hidden='true' class='fa fa-bars'/></div><ul class='menu' id='nav'><li><ul class='sub-menu'>";$("#LinkList1 li").each(function(){var t=$(this).text(),n=t.substr(0,1),r=t.substr(1);"_"==n?(n=$(this).find("a").attr("href"),e+='<li><a href="'+n+'">'+r+"</a></li>"):(n=$(this).find("a").attr("href"),e+='</ul></li><li><a href="'+n+'">'+t+"</a><ul class='sub-menu'>")});e+="</ul></li></ul>";$(this).html(e);$("#LinkList1 ul").each(function(){var e=$(this);if(e.html().replace(/\s|&nbsp;/g,"").length==0)e.remove()});$("#LinkList1 li").each(function(){var e=$(this);if(e.html().replace(/\s|&nbsp;/g,"").length==0)e.remove()})});
+$('.sub-menu').parent('li').children('a').addClass('has-sub');
+//]]>
+</script>
+</b:includable>
+  </b:widget>
+</b:section>
+<div class='header_soc-icon'>
+<a class='youtube-play' href='#' target='_blank' title='إشتركو بقناتنا على اليوتيوب'>
+<i class='fa-brands fa-youtube' style='color: #ffffff;'/>
+</a>
+<a class='google' href='#' target='_blank' title='تابعونا على جوجل'>
+<i class='fa-brands fa-google' style='color: #ffffff;'/>
+</a>
+<a class='twitter' href='#' target='_blank' title='تبعونا على تويتر'>
+<i class='fa-brands fa-twitter' style='color: #ffffff;'/>
+</a>
+<a class='facebook' href='#' target='_blank' title='تبعونا على فيسبوك'>
+<i class='fa-brands fa-facebook' style='color: #ffffff;'/>
+</a>
+</div>
+</div>
+</header>
+<div class='container' id='content-wrapper'>
+<div class='container' id='content-wrapper'>
+&lt;div class=&quot;<b:if cond='!data:view.isPage'>c-m-md-71</b:if> col-xs-12<b:if cond='data:view.isHomepage'> no-padding nobor</b:if>&quot; id=&#39;main-wrapper&#39;&gt;
+<b:section class='col-xs-12 c-m-widget' cond='data:view.isHomepage' id='c-mtech_sports-2'>
+  <b:widget id='HTML1' locked='false' title='جدول المباريات' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;div class=&quot;tabcontent&quot; id=&quot;yestrday&quot;&gt;
+&lt;br /&gt;
+&lt;li class=&quot;c-m_sports_events-event_item&quot;&gt;
+&lt;a href=&quot;#&quot;&gt;
+&lt;div class=&quot;c-m_sports_events-event_mask&quot;&gt;
+&lt;div class=&quot;event_mask_inner&quot;&gt;
+&lt;div class=&quot;h3 c-m_sports_events-event_mask_inner_text&quot;&gt; شاهد الاهداف&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_inner&quot;&gt;
+&lt;div class=&quot;team-aria team-first&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; height=&quot;100&quot; src=&quot;https://ssl.gstatic.com/onebox/media/sports/logos/k3Q_mKE98Dnohrcea0JFgQ_48x48.png&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;c-m_sports_events-team_title&quot;&gt; توتنهام&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_title_wrapper&quot;&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; - &lt;/div&gt;
+&lt;div class=&quot;event_status_inner_coming&quot;&gt;
+&lt;div class=&quot;none-class&quot;&gt;  16:30&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; - &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;team-aria team-second&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; src=&quot;http://media.linkonlineworld.com/img/yallakora/IOSTeams//120/\2018\7\29\Arsenal2018_7_29_15_29.jpg&quot; height=&quot;100&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;h2 c-m_sports_events-team_title&quot;&gt; ارسنال&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-info&quot;&gt; &lt;span class=&quot;mic&quot;&gt;&lt;i class=&quot;fa-solid fa-microphone&quot; style=&quot;color: #BF1736;&quot;&gt;&lt;/i&gt;عصام الشوالي&lt;/span&gt;&lt;span class=&quot;tv hidden-xs hidden-sm&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-television&quot;&gt;&lt;/i&gt;beIN SPORT&lt;/span&gt;&lt;span class=&quot;cup&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-trophy&quot;&gt;&lt;/i&gt;الدوري الانجليزي&lt;/span&gt;&lt;/div&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;c-m_sports_events-event_item&quot;&gt;
+&lt;a href=&quot;https://www.blogger.com/blogger.g?blogID=9126334100401284165#&quot;&gt;
+&lt;div class=&quot;c-m_sports_events-event_mask&quot;&gt;
+&lt;div class=&quot;event_mask_inner&quot;&gt;
+&lt;div class=&quot;h3 c-m_sports_events-event_mask_inner_text&quot;&gt; شاهد الاهداف&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_inner&quot;&gt;
+&lt;div class=&quot;team-aria team-first&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; height=&quot;100&quot; src=&quot;https://ssl.gstatic.com/onebox/media/sports/logos/z44l-a0W1v5FmgPnemV6Xw_48x48.png&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;c-m_sports_events-team_title&quot;&gt; مانسسترسيتي&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_title_wrapper&quot;&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; - &lt;/div&gt;
+&lt;div class=&quot;event_status_inner_coming&quot;&gt;
+&lt;div class=&quot;none-class&quot;&gt;  16:30&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; - &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;team-aria team-second&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; height=&quot;100&quot; src=&quot;https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1200px-West_Ham_United_FC_logo.svg.png&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;h2 c-m_sports_events-team_title&quot;&gt; ويست هام يونايتيد&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-info&quot;&gt; &lt;span class=&quot;mic&quot;&gt;&lt;i class=&quot;fa-solid fa-microphone&quot; style=&quot;color: #BF1736;&quot;&gt;&lt;/i&gt;جواد بدة&lt;/span&gt;&lt;span class=&quot;tv hidden-xs hidden-sm&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-television&quot;&gt;&lt;/i&gt;beIN SPORT&lt;/span&gt;&lt;span class=&quot;cup&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-trophy&quot;&gt;&lt;/i&gt;الدوري الانجليزي&lt;/span&gt;&lt;/div&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tabcontent&quot; id=&quot;today&quot;&gt;
+&lt;br /&gt;
+&lt;li class=&quot;c-m_sports_events-event_item&quot;&gt;
+&lt;a href=&quot;#&quot;&gt;
+&lt;div class=&quot;c-m_sports_events-event_mask&quot;&gt;
+&lt;div class=&quot;event_mask_inner&quot;&gt;
+&lt;div class=&quot;h3 c-m_sports_events-event_mask_inner_text&quot;&gt; شاهد المباراة&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_inner&quot;&gt;
+&lt;div class=&quot;team-aria team-first&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; height=&quot;100&quot; src=&quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/86/Paris_Saint-Germain_Logo.svg/1200px-Paris_Saint-Germain_Logo.svg.png&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;c-m_sports_events-team_title&quot;&gt; باريس سان جيرمان&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_title_wrapper&quot;&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; - &lt;/div&gt;
+&lt;div class=&quot;event_status_inner_coming&quot;&gt;
+&lt;div class=&quot;none-class&quot;&gt;  21:30&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; - &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;team-aria team-second&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/fr/thumb/a/a5/Logo_Olympique_Lyonnais_-_2022.svg/1200px-Logo_Olympique_Lyonnais_-_2022.svg.png&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;c-m_sports_events-team_title&quot;&gt;ليون&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-info&quot;&gt; &lt;span class=&quot;mic&quot;&gt;&lt;i class=&quot;fa-solid fa-microphone&quot; style=&quot;color: #BF1736;&quot;&gt;&lt;/i&gt;خليل البلوشي&lt;/span&gt;&lt;span class=&quot;tv hidden-xs hidden-sm&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-television&quot;&gt;&lt;/i&gt;beIN SPORT&lt;/span&gt;&lt;span class=&quot;cup&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-trophy&quot;&gt;&lt;/i&gt;الدوري الفرنسي&lt;/span&gt;&lt;/div&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;c-m_sports_events-event_item&quot;&gt;
+&lt;a href=&quot;https://lifeplus-samweb.blogspot.com/2019/02/03-02-2019_3.html&quot;&gt;
+&lt;div class=&quot;c-m_sports_events-event_mask&quot;&gt;
+&lt;div class=&quot;event_mask_inner&quot;&gt;
+&lt;div class=&quot;h3 c-m_sports_events-event_mask_inner_text &quot;&gt; شاهد المباراة&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_inner&quot;&gt;
+&lt;div class=&quot;team-aria team-first&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; height=&quot;100&quot; src=&quot;https://ssl.gstatic.com/onebox/media/sports/logos/z44l-a0W1v5FmgPnemV6Xw_48x48.png&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;c-m_sports_events-team_title&quot;&gt; مان سيتي&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_title_wrapper&quot;&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; -&lt;/div&gt;
+&lt;div class=&quot;event_status_inner_coming&quot;&gt;
+&lt;div class=&quot;none-class&quot;&gt;  20:30&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; -&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;team-aria team-second&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; src=&quot;http://media.linkonlineworld.com/img/yallakora/IOSTeams//120/\2018\7\29\Arsenal2018_7_29_15_29.jpg&quot; height=&quot;100&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;h2 c-m_sports_events-team_title&quot;&gt; ارسنال&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-info&quot;&gt; &lt;span class=&quot;mic&quot;&gt;&lt;i class=&quot;fa-solid fa-microphone&quot; style=&quot;color: #BF1736;&quot;&gt;&lt;/i&gt;جواد بدة&lt;/span&gt;&lt;span class=&quot;tv hidden-xs hidden-sm&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-television&quot;&gt;&lt;/i&gt;beIN SPORT&lt;/span&gt;&lt;span class=&quot;cup&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-trophy&quot;&gt;&lt;/i&gt;الدوري الانجليزي&lt;/span&gt;&lt;/div&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;c-m_sports_events-event_item&quot;&gt;
+&lt;a href=&quot;https://lifeplus-samweb.blogspot.com/2019/02/03-02-2019_3.html&quot;&gt;
+&lt;div class=&quot;c-m_sports_events-event_mask&quot;&gt;
+&lt;div class=&quot;event_mask_inner&quot;&gt;
+&lt;div class=&quot;h3 c-m_sports_events-event_mask_inner_text &quot;&gt; شاهد المباراة &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_inner&quot;&gt;
+&lt;div class=&quot;team-aria team-first&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; src=&quot;https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png&quot; height=&quot;100&quot; width=&quot;100&quot; /&gt; &lt;/div&gt;
+&lt;div class=&quot;c-m_sports_events-team_title&quot;&gt; مان يونايتيد&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_title_wrapper&quot;&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; -&lt;/div&gt;
+&lt;div class=&quot;event_status_inner_coming&quot;&gt;
+&lt;div class=&quot;none-class&quot;&gt;  20:30&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; -&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;team-aria team-second&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; src=&quot;https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Leicester_City_crest.svg/1200px-Leicester_City_crest.svg.png&quot; height=&quot;100&quot; width=&quot;100&quot; /&gt; &lt;/div&gt;
+&lt;div class=&quot;h2 c-m_sports_events-team_title&quot;&gt; ليستر سيتي&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-info&quot;&gt; &lt;span class=&quot;mic&quot;&gt;&lt;i class=&quot;fa-solid fa-microphone&quot; style=&quot;color: #BF1736;&quot;&gt;&lt;/i&gt;جواد بدة&lt;/span&gt;&lt;span class=&quot;tv hidden-xs hidden-sm&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-television&quot;&gt;&lt;/i&gt;beIN SPORT&lt;/span&gt;&lt;span class=&quot;cup&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-trophy&quot;&gt;&lt;/i&gt;الدوري الانجليزي&lt;/span&gt;&lt;/div&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;c-m_sports_events-event_item&quot;&gt;
+&lt;a href=&quot;https://lifeplus-samweb.blogspot.com/2019/02/03-02-2019_3.html&quot;&gt;
+&lt;div class=&quot;c-m_sports_events-event_mask&quot;&gt;
+&lt;div class=&quot;event_mask_inner&quot;&gt;
+&lt;div class=&quot;h3 c-m_sports_events-event_mask_inner_text &quot;&gt; شاهد المباراة&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_inner&quot;&gt;
+&lt;div class=&quot;team-aria team-first&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; src=&quot;https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png&quot; height=&quot;100&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;c-m_sports_events-team_title&quot;&gt; ريال مدريد&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_title_wrapper&quot;&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; -&lt;/div&gt;
+&lt;div class=&quot;event_status_inner_coming&quot;&gt;
+&lt;div class=&quot;none-class&quot;&gt;  20:30&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; -&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;team-aria team-second&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; height=&quot;100&quot; src=&quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/b9/Deportivo_La_Coruna.svg/1200px-Deportivo_La_Coruna.svg.png&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;h2 c-m_sports_events-team_title&quot;&gt; ديبورتيفو الافيس&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-info&quot;&gt; &lt;span class=&quot;mic&quot;&gt;&lt;i class=&quot;fa-solid fa-microphone&quot; style=&quot;color: #BF1736;&quot;&gt;&lt;/i&gt;حفيظ الدراجي&lt;/span&gt;&lt;span class=&quot;tv hidden-xs hidden-sm&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-television&quot;&gt;&lt;/i&gt;beIN SPORT&lt;/span&gt;&lt;span class=&quot;cup&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-trophy&quot;&gt;&lt;/i&gt;الدوري الاسباني&lt;/span&gt;&lt;/div&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tabcontent&quot; id=&quot;tommorw&quot;&gt;
+&lt;br /&gt;
+&lt;li class=&quot;c-m_sports_events-event_item&quot;&gt;
+&lt;a href=&quot;https://www.blogger.com/blogger.g?blogID=9126334100401284165#&quot;&gt;
+&lt;div class=&quot;c-m_sports_events-event_mask&quot;&gt;
+&lt;div class=&quot;event_mask_inner&quot;&gt;
+&lt;div class=&quot;h3 c-m_sports_events-event_mask_inner_text&quot;&gt; شاهد المباراة&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_inner&quot;&gt;
+&lt;div class=&quot;team-aria team-first&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; src=&quot;http://www.stickpng.com/assets/images/584a9b3bb080d7616d298777.png&quot; height=&quot;100&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;c-m_sports_events-team_title&quot;&gt; بارشلونة&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_title_wrapper&quot;&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; - &lt;/div&gt;
+&lt;div class=&quot;event_status_inner_coming&quot;&gt;
+&lt;div class=&quot;none-class&quot;&gt;  20:30&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; - &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;team-aria team-second&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; height=&quot;100&quot; src=&quot;https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Valenciacf.svg/220px-Valenciacf.svg.png&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;h2 c-m_sports_events-team_title&quot;&gt; فالينسيا&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-info&quot;&gt; &lt;span class=&quot;mic&quot;&gt;&lt;i class=&quot;fa-solid fa-microphone&quot; style=&quot;color: #BF1736;&quot;&gt;&lt;/i&gt;خليل البلوشي&lt;/span&gt;&lt;span class=&quot;tv hidden-xs hidden-sm&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-television&quot;&gt;&lt;/i&gt;beIN SPORT&lt;/span&gt;&lt;span class=&quot;cup&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-trophy&quot;&gt;&lt;/i&gt;الدوري الانجليزي&lt;/span&gt;&lt;/div&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;c-m_sports_events-event_item&quot;&gt;
+&lt;a href=&quot;https://www.blogger.com/blogger.g?blogID=9126334100401284165#&quot;&gt;
+&lt;div class=&quot;c-m_sports_events-event_mask&quot;&gt;
+&lt;div class=&quot;event_mask_inner&quot;&gt;
+&lt;div class=&quot;h3 c-m_sports_events-event_mask_inner_text&quot;&gt; شاهد المباراة&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_inner&quot;&gt;
+&lt;div class=&quot;team-aria team-first&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; height=&quot;100&quot; src=&quot;https://upload.wikimedia.org/wikipedia/ar/b/b2/Liverpool_FC_logo.png&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;c-m_sports_events-team_title&quot;&gt; ليفر بول&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event_title_wrapper&quot;&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; - &lt;/div&gt;
+&lt;div class=&quot;event_status_inner_coming&quot;&gt;
+&lt;div class=&quot;none-class&quot;&gt;  15:30&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-team_score numb&quot;&gt; - &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;team-aria team-second&quot;&gt;
+&lt;div class=&quot;c-m-team_logo&quot;&gt; &lt;img class=&quot;imgclub&quot; height=&quot;100&quot; src=&quot;https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1200px-West_Ham_United_FC_logo.svg.png&quot; width=&quot;100&quot; /&gt;&lt;/div&gt;
+&lt;div class=&quot;h2 c-m_sports_events-team_title&quot;&gt; ويست هام يونايتيد&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;events-info&quot;&gt; &lt;span class=&quot;mic&quot;&gt;&lt;i class=&quot;fa-solid fa-microphone&quot; style=&quot;color: #BF1736;&quot;&gt;&lt;/i&gt;خليل البلوشي&lt;/span&gt;&lt;span class=&quot;tv hidden-xs hidden-sm&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-television&quot;&gt;&lt;/i&gt;beIN SPORT&lt;/span&gt;&lt;span class=&quot;cup&quot;&gt;&lt;i aria-hidden=&quot;true&quot; class=&quot;fa fa-trophy&quot;&gt;&lt;/i&gt;الدوري الانجليزي&lt;/span&gt;&lt;/div&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/div&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+
+<b:if cond='data:title != &quot;&quot;'>
+<div class='box-title'>
+<div class='title'><i class='fa-solid fa-futbol' style='color: #BF1736;'/><data:title/></div>
+<div class='tab'>
+<button class='tablinks' onclick='openTabs(event, &apos;yestrday&apos;)'>الأمس</button>
+<button class='tablinks active' onclick='openTabs(event, &apos;today&apos;)'>اليوم</button>
+<button class='tablinks' onclick='openTabs(event, &apos;tommorw&apos;)'>الغد</button>
+</div>
+</div>
+</b:if>
+<div class='contents widget-content' id='content'><data:content/></div>
+</b:includable>
+  </b:widget>
+</b:section>
+<b:section class='largebanner' cond='data:view.isMultipleItems' id='largebanner' maxwidgets='1' showaddelement='yes'>
+  <b:widget id='HTML4' locked='false' title='' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji8j1JpeQZSN7otsbXWOGLz8PT2ctsGJJpihZx7cahI0jmJNet3lpqOlIcIcyg4Wc5unkLeiGQqcrpT_goRpoqDwqq8e_7cI6GBZVMXCt790PJ1KsvHf6EPh7oxMeq59reLK_6gUYemlappjYUd1PNphi_Y6YTTVrlt0NAlwKkbr5CH49TlQlzv5IWBQ/s768/Ad%20Space%20768x90_2.png" width="100%"/></center>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+</b:includable>
+  </b:widget>
+</b:section>
+<b:section class='col-xs-12 c-m-widget' cond='data:view.isHomepage' id='video_box-2'>
+  <b:widget id='HTML3' locked='false' title='بي ان الاخبارية' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<iframe class="box-content" width="100%" height="373px" src="https://www.youtube.com/embed/CVMqu0wsKYY"></iframe>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+
+<b:if cond='data:title != &quot;&quot;'>
+ <div class='box-title'><div class='title'><data:title/></div></div>
+</b:if>
+<div class='widget-content'><data:content/></div>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML5' locked='false' title='' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;div class=&#39;box-title&#39;&gt;&lt;div class=&#39;title&#39;&gt;القنوات&lt;/div&gt;&lt;/div&gt;
+&lt;div id=&#39;related-posts&#39;&gt;
+&lt;span class=&#39;slider_related&#39; data-no=&#39;20&#39; data-label=&#39;قنوات&#39;/&gt;
+&lt;/span&gt;&lt;/div&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML6' locked='false' title='' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh8uBSb33IUbNj_Udg0SYE68a-1SrHf94v1oSd6-NPXQLBLyOVYHxtKc9Zeoujpic6-77Uqbt2DO5oK3dFgYxt_Wb1Yz1g-sfUySB_1FFA3LCEowLMUZ3_rGaZ-nPlA-R-OALRG2OPxVi11iyMu-kxtIPQr-AyBWIvDZrHNVjAEs1sTtpFxV5liQv4DA/s900/banner_1.png" width="100%"/>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML2' locked='false' title='ملخصات' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<span class="video_box" data-label="ملخصات" data-no="9"></span>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+
+<b:if cond='data:title != &quot;&quot;'>
+<div class='box-title'><div class='title'><data:title/></div></div>
+</b:if>
+<div class='widget-content'><data:content/></div>
+</b:includable>
+  </b:widget>
+</b:section>
+<b:section class='main' id='main'>
+  <b:widget id='Blog1' locked='true' title='رسائل المدونة الإلكترونية' type='Blog' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+      <b:widget-setting name='commentLabel'>تعليق</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+      <b:widget-setting name='authorLabel'>By</b:widget-setting>
+      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showAuthor'>true</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='timestampLabel'>-</b:widget-setting>
+      <b:widget-setting name='reactionsLabel'/>
+      <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
+      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+      <b:widget-setting name='showLabels'>true</b:widget-setting>
+      <b:widget-setting name='showLocation'>false</b:widget-setting>
+      <b:widget-setting name='postLabelsLabel'>قسم:</b:widget-setting>
+      <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+      <b:widget-setting name='showReactions'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='top'>
+<b:if cond='data:mobile == &quot;false&quot;'>
+<data:defaultAdStart/>
+<b:loop index='x' values='data:posts' var='post'>
+<b:include data='post' name='post'/>
+<b:include cond='data:view.isPost' data='post' name='comments'/>
+<b:include cond='data:view.isPost' data='post' name='related-posts'/>
+<b:if cond='data:post.includeAd'>
+<b:if cond='data:post.isFirstPost'>
+<data:defaultAdEnd/>
+<b:else/>
+<data:adEnd/>
+</b:if>
+<div class='inline-ad'>
+<data:adCode/>
+</div>
+<data:adStart/>
+</b:if>
+</b:loop>
+<data:adEnd/>
+
+<b:if cond='data:view.isMultipleItems'>
+<b:include name='nextprev'/>
+</b:if>
+
+<b:include name='feedLinks'/>
+<b:if cond='data:top.showStars'>
+<script src='//www.google.com/jsapi' type='text/javascript'/>
+      <script type='text/javascript'>
+        google.load(&quot;annotations&quot;, &quot;1&quot;, {&quot;locale&quot;: &quot;<data:top.languageCode/>&quot;});
+        function initialize() {
+          google.annotations.setApplicationId(<data:top.blogspotReviews/>);
+          google.annotations.createAll();
+          google.annotations.fetch();
+        }
+        google.setOnLoadCallback(initialize);
+      </script>
+</b:if>
+<b:else/>
+<b:include name='mobile-main'/>
+</b:if>
+<b:if cond='data:top.showDummy'>
+<data:top.dummyBootstrap/>
+</b:if>
+</b:includable>
+    <b:includable id='backlinkDeleteIcon' var='backlink'>
+<span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
+<a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>
+<img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</b:includable>
+    <b:includable id='backlinks' var='post'>
+<a name='links'/><h4><data:post.backlinksLabel/></h4>
+<b:if cond='data:post.numBacklinks != 0'>
+<dl class='comments-block' id='comments-block'>
+<b:loop values='data:post.backlinks' var='backlink'>
+<div class='collapsed-backlink backlink-control'>
+<dt class='comment-title'>
+<span class='backlink-toggle-zippy'>&#160;</span>
+<a expr:href='data:backlink.url' rel='nofollow'><data:backlink.title/></a>
+<b:include data='backlink' name='backlinkDeleteIcon'/>
+</dt>
+<dd class='comment-body collapseable'>
+<data:backlink.snippet/>
+</dd>
+<dd class='comment-footer collapseable'>
+<span class='comment-author'><data:post.authorLabel/> <data:backlink.author/></span>
+<span class='comment-timestamp'><data:post.timestampLabel/> <data:backlink.timestamp/></span>
+</dd>
+</div>
+</b:loop>
+</dl>
+</b:if>
+<p class='comment-footer'>
+<a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &quot;_backlinks-create-link&quot;' target='_blank'><data:post.createLinkLabel/></a>
+</p>
+</b:includable>
+    <b:includable id='breadcrumb' var='posts'>
+<b:if cond='data:blog.homepageUrl != data:blog.url'>
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='tag'>الصفحة الرئيسية</a></span> <i class='fa fa-angle-left'/> <span itemprop='name'><data:blog.pageName/></span></div>
+<b:else/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:loop values='data:posts' var='post'>
+<b:if cond='data:post.labels'>
+<div class='breadcrumbs' id='breadcrumbs'>
+<span class='bhome' itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'><a expr:href='data:blog.homepageUrl' itemprop='url'><i class='fa fa-home'/></a></span>
+<b:loop values='data:post.labels' var='label'>
+<i class='fa fa-angle-left'/> <span class='bclabel' itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'><a expr:href='data:label.url' expr:title='data:label.name' itemprop='url'><span itemprop='title'><data:label.name/></span></a></span>
+</b:loop>
+<i class='fa fa-angle-left'/> <span itemprop='name'><data:post.title/></span>
+</div>
+<b:else/>
+<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='tag' title='الصفحة الرئيسية'>الصفحة الرئيسية</a></span> <i class='fa fa-angle-left'/> <span>لا تحمل اسما</span> <i class='fa fa-angle-left'/> <span itemprop='name'><data:post.title/></span></div>
+</b:if>
+</b:loop>
+<b:else/>
+<b:if cond='data:blog.pageType == &quot;archive&quot;'>
+<div class='breadcrumbs'>
+<span><a expr:href='data:blog.homepageUrl' title='الصفحة الرئيسية'>الصفحة الرئيسية</a></span> <i class='fa fa-angle-left'/> <span>أرشيف ل <data:blog.pageName/></span>
+</div>
+<b:else/>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+<div class='breadcrumbs'>
+<b:if cond='data:blog.pageName == &quot;&quot;'>
+<span><a expr:href='data:blog.homepageUrl' title='الصفحة الرئيسية'>الصفحة الرئيسية</a></span> <i class='fa fa-angle-left'/> <span>جميع المشاركات</span>
+<b:else/>
+<span><a expr:href='data:blog.homepageUrl' title='الصفحة الرئيسية'>الصفحة الرئيسية</a></span> <i class='fa fa-angle-left'/> <span>المشاركات المودعة تحت <data:blog.pageName/></span>
+</b:if>
+</div>
+</b:if>
+</b:if>
+</b:if>
+</b:if>
+</b:if>
+</b:includable>
+    <b:includable id='comment-form' var='post'/>
+    <b:includable id='commentDeleteIcon' var='comment'>
+<span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+<b:if cond='data:showCmtPopup'>
+<div class='goog-toggle-button'>
+<div class='goog-inline-block comment-action-icon'/>
+</div>
+<b:else/>
+<a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'>
+<img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+</a>
+</b:if>
+</span>
+</b:includable>
+    <b:includable id='comment_count_picker' var='post'>
+<b:if cond='data:post.commentSource == 1'>
+<span class='cmt_count_iframe_holder' expr:data-count='data:post.numComments' expr:data-onclick='data:post.addCommentOnclick' expr:data-post-url='data:post.url' expr:data-url='data:post.url.canonical.http'>
+</span>
+<b:else/>
+<a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'>
+<data:post.commentLabelFull/>:
+</a>
+</b:if>
+</b:includable>
+    <b:includable id='comment_picker' var='post'>
+<b:if cond='data:post.commentSource == 1'>
+<b:include data='post' name='iframe_comments'/>
+<b:elseif cond='data:post.showThreadedComments'/>
+<b:include data='post' name='threaded_comments'/>
+<b:else/>
+<b:include data='post' name='comments'/>
+</b:if>
+</b:includable>
+    <b:includable id='comments' var='post'>
+<script>(function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = &quot;//connect.facebook.net/ar_AR/sdk.js#xfbml=1&amp;version=v2.0&quot;;fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));</script>
+&lt;div class=&#39;fb-comments&#39; data-href=&#39;<data:blog.homepageUrl/>&#39; data-width=&#39;100%&#39; data-numposts=&#39;5&#39; data-colorscheme=&#39;light&#39;&gt;&lt;/div&gt;
+</b:includable>
+    <b:includable id='feedLinks'>
+<b:if cond='data:blog.pageType != &quot;item&quot;'> 
+<b:if cond='data:feedLinks'>
+<div class='blog-feeds'>
+<b:include data='feedLinks' name='feedLinksBody'/>
+</div>
+</b:if>
+<b:else/> 
+<div class='post-feeds'>
+<b:loop values='data:posts' var='post'>
+<b:include cond='data:post.allowComments and data:post.feedLinks' data='post.feedLinks' name='feedLinksBody'/>
+</b:loop>
+</div>
+</b:if>
+</b:includable>
+    <b:includable id='feedLinksBody' var='links'>
+<div class='feed-links'>
+<data:feedLinksMsg/>
+<b:loop values='data:links' var='f'>
+<a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+</b:loop>
+</div>
+</b:includable>
+    <b:includable id='iframe_comments' var='post'>
+<b:if cond='data:post.allowIframeComments'>
+<script expr:src='data:post.iframeCommentSrc' type='text/javascript'/>
+    <div class='cmt_iframe_holder' expr:data-href='data:post.url.canonical' expr:data-viewtype='data:post.viewType'/>
+
+    <b:if cond='data:post.embedCommentForm == &quot;false&quot;'>
+      <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a>
+    </b:if>
+  </b:if>
+</b:includable>
+    <b:includable id='mobile-index-post' var='post'>
+  <div class='mobile-date-outer date-outer'>
+    <b:if cond='data:post.dateHeader'>
+      <div class='date-header'>
+        <span><data:post.dateHeader/></span>
+      </div>
+    </b:if>
+
+    <div class='mobile-post-outer'>
+      <a expr:href='data:post.url'>
+        <h3 class='mobile-index-title entry-title' itemprop='name'>
+          <data:post.title/>
+        </h3>
+
+        <div class='mobile-index-arrow'>&amp;rsaquo;</div>
+
+        <div class='mobile-index-contents'>
+          <b:if cond='data:post.thumbnailUrl'>
+            <div class='mobile-index-thumbnail'>
+              <div class='Image'>
+                <img expr:src='data:post.thumbnailUrl'/>
+              </div>
+            </div>
+          </b:if>
+
+          <div class='post-body'>
+            <b:if cond='data:post.snippet'><data:post.snippet/></b:if>
+          </div>
+        </div>
+
+        <div style='clear: both;'/>
+      </a>
+
+      <div class='mobile-index-comment'>
+        <b:include cond='data:blog.pageType != &quot;static_page&quot;                          and data:post.allowComments                          and data:post.numComments != 0' data='post' name='comment_count_picker'/>
+      </div>
+    </div>
+  </div>
+</b:includable>
+    <b:includable id='mobile-main' var='top'>
+    <!-- posts -->
+    <div class='blog-posts hfeed'>
+
+      <b:include data='top' name='status-message'/>
+
+      <b:if cond='data:blog.pageType == &quot;index&quot;'>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-index-post'/>
+        </b:loop>
+      <b:else/>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-post'/>
+        </b:loop>
+      </b:if>
+    </div>
+
+   <b:include name='mobile-nextprev'/>
+</b:includable>
+    <b:includable id='mobile-nextprev'>
+  <div class='blog-pager' id='blog-pager'>
+    <b:if cond='data:newerPageUrl'>
+      <div class='mobile-link-button' id='blog-pager-newer-link'>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>&amp;lsaquo;</a>
+      </div>
+    </b:if>
+
+    <b:if cond='data:olderPageUrl'>
+      <div class='mobile-link-button' id='blog-pager-older-link'>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>&amp;rsaquo;</a>
+      </div>
+    </b:if>
+
+    <div class='mobile-link-button' id='blog-pager-home-link'>
+      <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+    </div>
+
+    <div class='mobile-desktop-link'>
+      <a class='home-link' expr:href='data:desktopLinkUrl'><data:desktopLinkMsg/></a>
+    </div>
+
+  </div>
+  <div class='clear'/>
+</b:includable>
+    <b:includable id='mobile-post' var='post'>
+  <div class='date-outer'>
+    <b:if cond='data:post.dateHeader'>
+      <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+    </b:if>
+    <div class='date-posts'>
+      <div class='post-outer'>
+
+        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+          <b:if cond='data:post.thumbnailUrl'>
+            <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
+          </b:if>
+          <meta expr:content='data:blog.blogId' itemprop='blogId'/>
+          <meta expr:content='data:post.id' itemprop='postId'/>
+
+          <a expr:name='data:post.id'/>
+          <b:if cond='data:post.title'>
+            <h3 class='post-title entry-title' itemprop='name'>
+              <b:if cond='data:post.link'>
+                <a expr:href='data:post.link'><data:post.title/></a>
+              <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
+                <a expr:href='data:post.url'><data:post.title/></a>
+              <b:else/>
+                <data:post.title/>
+              </b:if>
+            </h3>
+          </b:if>
+
+          <div class='post-header'>
+            <div class='post-header-line-1'/>
+          </div>
+
+          <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+            <data:post.body/>
+            <div style='clear: both;'/> <!-- clear for photos floats -->
+          </div>
+
+          <div class='post-footer'>
+            <div class='post-footer-line post-footer-line-1'>
+              <span class='post-author vcard'>
+                <b:if cond='data:top.showAuthor'>
+                  <b:if cond='data:post.authorProfileUrl'>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                      <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
+                      <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
+                        <span itemprop='name'><data:post.author/></span>
+                      </a>
+                    </span>
+                  <b:else/>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                      <span itemprop='name'><data:post.author/></span>
+                    </span>
+                  </b:if>
+                </b:if>
+              </span>
+
+              <span class='post-timestamp'>
+                <b:if cond='data:top.showTimestamp'>
+                  <data:top.timestampLabel/>
+                  <b:if cond='data:post.url'>
+                    <meta expr:content='data:post.url.canonical' itemprop='url'/>
+                    <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></a>
+                  </b:if>
+                </b:if>
+              </span>
+
+              <span class='post-comment-link'>
+                <b:include cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}                                  and data:post.allowComments' data='post' name='comment_count_picker'/>
+              </span>
+            </div>
+
+            <div class='post-footer-line post-footer-line-2'>
+              <b:if cond='data:top.showMobileShare'>
+                <div class='mobile-link-button goog-inline-block' id='mobile-share-button'>
+                  <a href='javascript:void(0);'><data:shareMsg/></a>
+                </div>
+              </b:if>
+              <b:if cond='data:top.showDummy'>
+                <div class='goog-inline-block dummy-container'><data:post.dummyTag/></div>
+              </b:if>
+            </div>
+
+          </div>
+        </div>
+
+        <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
+      </div>
+    </div>
+  </div>
+</b:includable>
+    <b:includable id='nextprev'>
+  <div class='pagination' id='pagination'>
+    <b:if cond='data:newerPageUrl'>
+      <span id='blog-pager-newer-link'>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><data:newerPageTitle/></a>
+      </span>
+    </b:if>
+
+    <b:if cond='data:olderPageUrl'>
+      <span id='blog-pager-older-link'>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><data:olderPageTitle/></a>
+      </span>
+    </b:if>
+
+    <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+
+    <b:if cond='data:mobileLinkUrl'>
+      <div class='blog-mobile-link'>
+        <a expr:href='data:mobileLinkUrl'><data:mobileLinkMsg/></a>
+      </div>
+    </b:if>
+
+  </div>
+  <div class='clear'/>
+</b:includable>
+    <b:includable id='post' var='post'>
+      &lt;div  itemprop=&#39;blogPost&#39; itemscope=&#39;itemscope&#39; itemtype=&#39;http://schema.org/BlogPosting&#39;   class=&quot;<b:if cond='!data:view.isMultipleItems'> post</b:if><b:if cond='data:view.isMultipleItems'>post-outer col-md-4 col-sm-6 col-xs-6</b:if>&quot;   &gt;
+<b:if cond='data:post.firstImageUrl'><meta content='summary_large_image' name='twitter:card'/><meta expr:content='data:post.firstImageUrl' name='twitter:image'/><b:else/><meta content='summary' name='twitter:card'/><b:if cond='data:blog.postImageThumbnailUrl'><meta expr:content='data:blog.postImageThumbnailUrl' name='twitter:image'/></b:if></b:if><b:if cond='data:blog.pageName'><meta expr:content='data:blog.pageName' name='twitter:title'/><b:else/><meta expr:content='data:blog.title' name='twitter:title'/></b:if><b:if cond='data:blog.metaDescription'><meta expr:content='data:blog.metaDescription' name='twitter:description'/><b:else/><meta expr:content='data:post.snippet' name='twitter:description'/></b:if><meta expr:content='data:post.sharePostUrl' name='twitter:url'/><meta expr:content='data:post.timestampISO8601' property='article:published_time'/><meta content='Technology' property='article:section'/><b:loop values='data:post.labels' var='label'><meta expr:content='data:label.name' property='article:tag'/></b:loop><meta expr:itemid='data:post.link ? data:post.link : data:post.url' itemType='https://schema.org/WebPage' itemprop='mainEntityOfPage' itemscope='itemscope'/><meta expr:content='data:post.timestamp' itemprop='datePublished'/><meta expr:content='data:post.lastUpdatedISO8601' itemprop='dateModified'/><meta expr:content='data:post.author' itemprop='author'/><div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'><div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'><image expr:alt='data:post.title' itemprop='url' src='http://1.bp.blogspot.com/-7MVRS2FYI1Y/Wq2xV27exZI/AAAAAAAAFB4/UnZQ7RX-wuw1h-sFk3_DySkvi8atYaYMgCK4BGAYYCw/s270/rkm.png' style='display:none'/><meta content='//1.bp.blogspot.com/-7MVRS2FYI1Y/Wq2xV27exZI/AAAAAAAAFB4/UnZQ7RX-wuw1h-sFk3_DySkvi8atYaYMgCK4BGAYYCw/s270/rkm.png' expr:alt='data:post.title' itemprop='image' style='display:none'/><meta content='600' itemprop='width'/><meta content='auto' itemprop='height'/></div><meta expr:content='data:blog.title' itemprop='name'/></div><div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'><image expr:alt='data:post.title' itemprop='url' src='http://1.bp.blogspot.com/-7MVRS2FYI1Y/Wq2xV27exZI/AAAAAAAAFB4/UnZQ7RX-wuw1h-sFk3_DySkvi8atYaYMgCK4BGAYYCw/s270/rkm.png' style='display:none'/><meta content='//1.bp.blogspot.com/-7MVRS2FYI1Y/Wq2xV27exZI/AAAAAAAAFB4/UnZQ7RX-wuw1h-sFk3_DySkvi8atYaYMgCK4BGAYYCw/s270/rkm.png' expr:alt='data:post.title' itemprop='image' style='display:none'/><meta content='800' itemprop='width'/><meta content='800' itemprop='height'/></div><meta expr:content='data:blog.blogId'/><meta expr:content='data:post.id'/>
+<b:if cond='data:view.isMultipleItems'><div class='inner-content'><div class='post-thumbnail'><a class='c-m-tumb' expr:href='data:post.url' expr:style='&quot;background: url(\&quot;&quot; + data:post.firstImageUrl  + &quot;\&quot;)no-repeat center center;background-size: cover;&quot;' expr:title='data:post.title' rel='bookmark'/><span class='post-lable'><b:loop values='data:post.labels' var='label'><b:if cond='data:label.isLast != &quot;true&quot;'><a expr:href='data:label.url' rel='tag'><data:label.name/></a></b:if></b:loop></span></div><div class='post-info details'><a expr:href='data:label.url' expr:title='data:post.title' rel='bookmark'><div class='c-m-Title' itemprop='headline'><data:post.title/></div></a></div></div><b:else/><header class='entry-header'><b:include data='posts' name='breadcrumb'/><b:if cond='data:post.title'><h1 class='page-title entry-title' itemprop='headline'><b:if cond='data:post.link'><a expr:href='data:post.link'><data:post.title/></a><b:else/><b:if cond='data:post.url'><b:if cond='data:blog.url != data:post.url'><a expr:href='data:post.url'><data:post.title/></a><b:else/><data:post.title/></b:if><b:else/><data:post.title/></b:if></b:if></h1></b:if></header><div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' expr:itemprop='(data:blog.metaDescription ? &quot;&quot; : &quot;description &quot;) + &quot;articleBody&quot;'><div id='postAD-top'/><i class='clear'/><i class='clear'/><div expr:id='&quot;post1&quot; + data:post.id'/><div style='margin:20px 0;text-align:  center;'><div id='postAD-center'/></div><div expr:id='&quot;post2&quot; + data:post.id'><data:post.body/></div><script type='text/javascript'>
+var obj0=document.getElementById(&quot;post1<data:post.id/>&quot;);var obj1=document.getElementById(&quot;post2<data:post.id/>&quot;);var s=obj1.innerHTML;var t=s.substr(0,s.length/2);var r=t.lastIndexOf(&quot;&lt;br&gt;&quot;);if(r&gt;0){obj0.innerHTML=s.substr(0,r);obj1.innerHTML=s.substr(r+4);}
+</script><i class='clear'/><div id='postAD-bottom'/><i class='clear'/><div style='clear: both;'/></div><div class='post-footer'><div class='clear' id='entry-footer-meta'><b:if cond='data:post.labels'><span class='post-lable' style='display:none'><b:loop values='data:post.labels' var='label'><b:if cond='data:label.isLast != &quot;true&quot;'><a expr:href='data:label.url' rel='tag'><data:label.name/></a></b:if></b:loop></span></b:if></div></div><div class='sharepost'><h4><span/></h4><ul class='socialcount socialcount-large clear'><li><a class='twitter' expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank' title='Twitter Tweet'><i class='fa fa-twitter'/>تغريد</a></li><li><a class='facebook' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' onclick='window.open(this.href,&apos;sharer&apos;, &apos;toolbar=0,status=0,width=626,height=436&apos;); return false;' rel='nofollow' target='_blank' title='Facebook Share'><i class='fa fa-facebook'/>مشاركة</a></li><li><a class='gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank' title='Google Plus Share'><i class='fa fa-google-plus'/>مشاركة</a></li></ul></div></b:if>
+&lt;/div&gt;
+</b:includable>
+    <b:includable id='postQuickEdit' var='post'/>
+    <b:includable id='related-posts'>
+<div id='related_postsp'>
+<b:if cond='data:post.labels'>
+ <b:loop values='data:post.labels' var='label'>
+<div class='box-title'><div class='title'><data:label.name/></div></div>
+</b:loop>
+</b:if>
+<div id='related-posts'>
+<b:if cond='data:post.labels'>
+<b:loop values='data:post.labels' var='label'>
+<b:if cond='data:label.isLast == &quot;true&quot;'>
+<span class='slider_related' data-no='20' expr:data-label='data:label.name'/>
+</b:if>
+</b:loop>
+</b:if>
+</div>
+</div>
+</b:includable>
+    <b:includable id='shareButtons' var='post'/>
+    <b:includable id='status-message'/>
+    <b:includable id='threaded-comment-form' var='post'/>
+    <b:includable id='threaded_comment_js' var='post'/>
+    <b:includable id='threaded_comments' var='post'/>
+  </b:widget>
+  <b:widget id='HTML201' locked='true' mobile='yes' title='إعلان أول الموضوع' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjaQH_TaWENowU48ccMi6WvLcyuQvVLRSmuQxwWRIoNyfaPaFbH55MnEowqHLqQM5KkdsUJ1zaVPBmkJy5oC3f3nfncIFjwb6ZpxLyeitidHr3r2K3mEgjdFLoR1bzJsVLBXiydnQlkR7p3EpDzB_pwcZrVxPVCPGKBqlig9GfKc9p98EdnDc0_qDuGw/s768/Ad%20Space%20768x90.png" width="100%"/>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:view.isPost'><data:content/></b:if>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML202' locked='true' mobile='yes' title='إعلان وسط الموضوع' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji8j1JpeQZSN7otsbXWOGLz8PT2ctsGJJpihZx7cahI0jmJNet3lpqOlIcIcyg4Wc5unkLeiGQqcrpT_goRpoqDwqq8e_7cI6GBZVMXCt790PJ1KsvHf6EPh7oxMeq59reLK_6gUYemlappjYUd1PNphi_Y6YTTVrlt0NAlwKkbr5CH49TlQlzv5IWBQ/s768/Ad%20Space%20768x90_2.png" width="100%"/>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:view.isPost'><data:content/></b:if>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML203' locked='true' mobile='yes' title='إعلان آخر الموضوع' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfBGWPtn5stTFdv3tyn0YmaaCBvCR95slMQjiWxONScNsTj9B3I_GSP4upncDI7mCbxBuBIZePawXLxQUpl5ue5Ojbo45OBaixH_Jj6Q4tDDE_tcYEkGZ5vk0VG5pCyloy9Cyylz1l8bDih8rFagTKbw3bhidcgIIhrfYdw1Nfk_sWoNvkOmuzef3sIQ/s768/Ad%20Space%20768x90_3.png" width="100%"/>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:view.isPost'><data:content/></b:if>
+</b:includable>
+  </b:widget>
+</b:section>
+&lt;/div&gt;
+<aside class='c-m-md-29 col-xs-12' id='sidebar-wrapper'>
+<b:section class='sidebar' id='sidebar' preferred='yes'>
+  <b:widget id='Image2' locked='false' title='كلاسيكو فرنسا' type='Image' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'>http://3.bp.blogspot.com/-h95R5ecCoe4/XJAWatnG-hI/AAAAAAAAUOI/cMQdFUJ4w9cpCLv83_9daJUgbdST4xHNgCK4BGAYYCw/s1600/2572089-whats-hot-Ar.jpg</b:widget-setting>
+      <b:widget-setting name='displayHeight'>189</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>730</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
+      <b:widget-setting name='displayWidth'>298</b:widget-setting>
+      <b:widget-setting name='link'>#</b:widget-setting>
+      <b:widget-setting name='caption'/>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'>
+<h2><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<b:tag cond='data:link' expr:href='data:link' name='a'>
+<img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+</b:tag>
+<br/>
+<b:if cond='data:caption'>
+<span class='caption'><data:caption/></span>
+</b:if>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML8' locked='false' title='اعلان' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<img style="width:100%;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNf6JLsVDHBNf8VxFVSkBkz71nU6H5AsSPKj1tWq4e5IjcuDEznrS_Bbu2wFSzCbFd1vqWCaA8kD5Bgzy2ceLCtMuABjC-nweQziQBl6jFJtBEq9WqT0DPIjwCWA0fH4V95YlqB9SXpXB_sgEaaEE_3hDMcneAnQqTHyQLsDXlTZyLRZ_CYYPj_9BjNQ/s300/Ad%20space%20300x250_2.png" />]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='Image1' locked='false' title='ارسنال ضد الريدز' type='Image' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'>http://1.bp.blogspot.com/-XmzThY3Eue8/XJAWPvZkP_I/AAAAAAAAUOA/5OeCONdU8p02Gj4KR_bE6IiBgil4IRfcACK4BGAYYCw/s1600/2272902-whats-hot_Ar.jpg</b:widget-setting>
+      <b:widget-setting name='displayHeight'>189</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>730</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
+      <b:widget-setting name='displayWidth'>298</b:widget-setting>
+      <b:widget-setting name='link'>#</b:widget-setting>
+      <b:widget-setting name='caption'/>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'>
+<h2><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<b:tag cond='data:link' expr:href='data:link' name='a'>
+<img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+</b:tag>
+<br/>
+<b:if cond='data:caption'>
+<span class='caption'><data:caption/></span>
+</b:if>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML9' locked='false' title='اعلان' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<img style="width:100%;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2kcn2-ko7NkjgogD0hZup0jpZW9v58M1WFo7YmS5IXizqyt8yTZcfQ58_9L4SsVvDPMAIazST8mVy_D11PKBEV8X2M5j7ZVNjZ1o5iBQZovldO-Eug2aiTbDkEskDcmb2Z3XU3lvSnBdWNPJwMfinxo6ESW9jlnb_xGgj53LO0fb1LPFoU624k3NgZw/s600/Ad%20space%20300x600.png"/>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='Image4' locked='false' title='السيتي ضد البلوز' type='Image' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'>http://2.bp.blogspot.com/-NKQvCMFMrJE/XJAY2PEzUtI/AAAAAAAAUOk/6koM2Gv62v8EET6ZbPxsiz7iZeNanxslwCK4BGAYYCw/s1600/2489646-whats-hot_Ar.jpg</b:widget-setting>
+      <b:widget-setting name='displayHeight'>189</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>730</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
+      <b:widget-setting name='displayWidth'>298</b:widget-setting>
+      <b:widget-setting name='link'>#</b:widget-setting>
+      <b:widget-setting name='caption'/>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'>
+<h2><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<b:tag cond='data:link' expr:href='data:link' name='a'>
+<img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+</b:tag>
+<br/>
+<b:if cond='data:caption'>
+<span class='caption'><data:caption/></span>
+</b:if>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+</b:section>
+</aside>
+<b:section class='largebanner' id='largebanner2' maxwidgets='1' showaddelement='yes'/>
+</div>
+</div>
+<footer class='footer-wrapper' id='footer-wrapper'>
+<div class='copyright'>
+<div class=' container no-padding'>
+<div class='social-icon pull-right'>
+<a class='youtube-play' href='#' target='_blank' title='Follow Us on youtube-play'>
+<i class='fa-brands fa-youtube' style='color: #ffffff;'/>
+</a>
+<a class='google' href='#' target='_blank' title='Follow Us on google'>
+<i class='fa-brands fa-google' style='color: #ffffff;'/>
+</a>
+<a class='twitter' href='#' target='_blank' title='Follow Us on twitter'>
+<i class='fa-brands fa-twitter' style='color: #ffffff;'/>
+</a>
+<a class='facebook' href='#' target='_blank' title='Follow Us on facebook'>
+<i class='fa-brands fa-facebook' style='color: #ffffff;'/>
+</a>
+</div>
+<div class='design_copyright pull-left'>
+<p id='WevRight'><a href='http://chof-mach.blogspot.com/' title='تطوير و تكويد : شوف ماتش'>&#169; ChofMach</a></p>
+</div></div>
+</div>
+</footer>
+<script type='text/javascript'>
+//<![CDATA[
+if ((window.location.hostname != 'downup-file.blogspot.com'))window.location.hostname = 'google.com';
+if ((window.location.protocol != 'http:'))window.location.protocol = 'http';
+function openTabs(t,e){var o,s,i;for(s=document.getElementsByClassName("tabcontent"),o=0;o<s.length;o++)s[o].style.display="none";for(i=document.getElementsByClassName("tablinks"),o=0;o<i.length;o++)i[o].className=i[o].className.replace(" active","");document.getElementById(e).style.display="block",t.currentTarget.className+=" active"}"function"!=typeof Object.create&&(Object.create=function(t){function e(){}return e.prototype=t,new e}),function(r,l,p,m){var o={init:function(t,e){var o=this;o.$elem=r(e),o.options=r.extend({},r.fn.owlCarousel.options,o.$elem.data(),t),o.userOptions=t,o.loadContent()},loadContent:function(){var s=this;if("function"==typeof s.options.beforeInit&&s.options.beforeInit.apply(this,[s.$elem]),"string"==typeof s.options.jsonPath){var t=s.options.jsonPath;r.getJSON(t,function(t){if("function"==typeof s.options.jsonSuccess)s.options.jsonSuccess.apply(this,[t]);else{var e="";for(var o in t.owl)e+=t.owl[o].item;s.$elem.html(e)}s.logIn()})}else s.logIn()},logIn:function(t){var e=this;e.$elem.data("owl-originalStyles",e.$elem.attr("style")).data("owl-originalClasses",e.$elem.attr("class")),e.$elem.css({opacity:0}),e.orignalItems=e.options.items,e.checkBrowser(),e.wrapperWidth=0,e.checkVisible,e.setVars()},setVars:function(){var t=this;if(0===t.$elem.children().length)return!1;t.baseClass(),t.eventTypes(),t.$userItems=t.$elem.children(),t.itemsAmount=t.$userItems.length,t.wrapItems(),t.$owlItems=t.$elem.find(".owl-item"),t.$owlWrapper=t.$elem.find(".owl-wrapper"),t.playDirection="next",t.prevItem=0,t.prevArr=[0],t.currentItem=0,t.customEvents(),t.onStartup()},onStartup:function(){var t=this;t.updateItems(),t.calculateAll(),t.buildControls(),t.updateControls(),t.response(),t.moveEvents(),t.stopOnHover(),t.owlStatus(),!1!==t.options.transitionStyle&&t.transitionTypes(t.options.transitionStyle),!0===t.options.autoPlay&&(t.options.autoPlay=5e3),t.play(),t.$elem.find(".owl-wrapper").css("display","block"),t.$elem.is(":visible")?t.$elem.css("opacity",1):t.watchVisibility(),t.onstartup=!1,t.eachMoveUpdate(),"function"==typeof t.options.afterInit&&t.options.afterInit.apply(this,[t.$elem])},eachMoveUpdate:function(){var t=this;!0===t.options.lazyLoad&&t.lazyLoad(),!0===t.options.autoHeight&&t.autoHeight(),t.onVisibleItems(),"function"==typeof t.options.afterAction&&t.options.afterAction.apply(this,[t.$elem])},updateVars:function(){var t=this;"function"==typeof t.options.beforeUpdate&&t.options.beforeUpdate.apply(this,[t.$elem]),t.watchVisibility(),t.updateItems(),t.calculateAll(),t.updatePosition(),t.updateControls(),t.eachMoveUpdate(),"function"==typeof t.options.afterUpdate&&t.options.afterUpdate.apply(this,[t.$elem])},reload:function(t){var e=this;setTimeout(function(){e.updateVars()},0)},watchVisibility:function(){var t=this;if(!1!==t.$elem.is(":visible"))return!1;t.$elem.css({opacity:0}),clearInterval(t.autoPlayInterval),clearInterval(t.checkVisible),t.checkVisible=setInterval(function(){t.$elem.is(":visible")&&(t.reload(),t.$elem.animate({opacity:1},200),clearInterval(t.checkVisible))},500)},wrapItems:function(){var t=this;t.$userItems.wrapAll('<div class="owl-wrapper">').wrap('<div class="owl-item"></div>'),t.$elem.find(".owl-wrapper").wrap('<div class="owl-wrapper-outer">'),t.wrapperOuter=t.$elem.find(".owl-wrapper-outer"),t.$elem.css("display","block")},baseClass:function(){var t=this,e=t.$elem.hasClass(t.options.baseClass),o=t.$elem.hasClass(t.options.theme);e||t.$elem.addClass(t.options.baseClass),o||t.$elem.addClass(t.options.theme)},updateItems:function(){var t=this;if(!1===t.options.responsive)return!1;if(!0===t.options.singleItem)return t.options.items=t.orignalItems=1,t.options.itemsCustom=!1,t.options.itemsDesktop=!1,t.options.itemsDesktopSmall=!1,t.options.itemsTablet=!1,t.options.itemsTabletSmall=!1,t.options.itemsMobile=!1;var e=r(t.options.responsiveBaseWidth).width();if(e>(t.options.itemsDesktop[0]||t.orignalItems)&&(t.options.items=t.orignalItems),void 0!==t.options.itemsCustom&&!1!==t.options.itemsCustom)for(var o in t.options.itemsCustom.sort(function(t,e){return t[0]-e[0]}),t.options.itemsCustom)void 0!==t.options.itemsCustom[o]&&t.options.itemsCustom[o][0]<=e&&(t.options.items=t.options.itemsCustom[o][1]);else e<=t.options.itemsDesktop[0]&&!1!==t.options.itemsDesktop&&(t.options.items=t.options.itemsDesktop[1]),e<=t.options.itemsDesktopSmall[0]&&!1!==t.options.itemsDesktopSmall&&(t.options.items=t.options.itemsDesktopSmall[1]),e<=t.options.itemsTablet[0]&&!1!==t.options.itemsTablet&&(t.options.items=t.options.itemsTablet[1]),e<=t.options.itemsTabletSmall[0]&&!1!==t.options.itemsTabletSmall&&(t.options.items=t.options.itemsTabletSmall[1]),e<=t.options.itemsMobile[0]&&!1!==t.options.itemsMobile&&(t.options.items=t.options.itemsMobile[1]);t.options.items>t.itemsAmount&&!0===t.options.itemsScaleUp&&(t.options.items=t.itemsAmount)},response:function(){var t,e=this;if(!0!==e.options.responsive)return!1;var o=r(l).width();e.resizer=function(){r(l).width()!==o&&(!1!==e.options.autoPlay&&clearInterval(e.autoPlayInterval),clearTimeout(t),t=setTimeout(function(){o=r(l).width(),e.updateVars()},e.options.responsiveRefreshRate))},r(l).resize(e.resizer)},updatePosition:function(){var t=this;t.jumpTo(t.currentItem),!1!==t.options.autoPlay&&t.checkAp()},appendItemsSizes:function(){var o=this,s=0,i=o.itemsAmount-o.options.items;o.$owlItems.each(function(t){var e=r(this);e.css({width:o.itemWidth}).data("owl-item",Number(t)),t%o.options.items!=0&&t!==i||i<t||(s+=1),e.data("owl-roundPages",s)})},appendWrapperSizes:function(){var t=this,e=t.$owlItems.length*t.itemWidth;t.$owlWrapper.css({width:2*e,right:0}),t.appendItemsSizes()},calculateAll:function(){var t=this;t.calculateWidth(),t.appendWrapperSizes(),t.loops(),t.max()},calculateWidth:function(){var t=this;t.itemWidth=Math.round(t.$elem.width()/t.options.items)},max:function(){var t=this,e=-1*(t.itemsAmount*t.itemWidth-t.options.items*t.itemWidth);return t.options.items>t.itemsAmount?(e=t.maximumItem=0,t.maximumPixels=0):(t.maximumItem=t.itemsAmount-t.options.items,t.maximumPixels=e),e},min:function(){return 0},loops:function(){var t=this;t.positionsInArray=[0],t.pagesInArray=[];for(var e=0,o=0,s=0;s<t.itemsAmount;s++)if(o+=t.itemWidth,t.positionsInArray.push(-o),!0===t.options.scrollPerPage){var i=r(t.$owlItems[s]).data("owl-roundPages");i!==e&&(t.pagesInArray[e]=t.positionsInArray[s],e=i)}},buildControls:function(){var t=this;!0!==t.options.navigation&&!0!==t.options.pagination||(t.owlControls=r('<div class="owl-controls"/>').toggleClass("clickable",!t.browser.isTouch).appendTo(t.$elem)),!0===t.options.pagination&&t.buildPagination(),!0===t.options.navigation&&t.buildButtons()},buildButtons:function(){var e=this,t=r('<div class="owl-buttons"/>');e.owlControls.append(t),e.buttonPrev=r("<div/>",{class:"owl-prev",html:e.options.navigationText[0]||""}),e.buttonNext=r("<div/>",{class:"owl-next",html:e.options.navigationText[1]||""}),t.append(e.buttonPrev).append(e.buttonNext),t.on("touchstart.owlControls mousedown.owlControls",'div[class^="owl"]',function(t){t.preventDefault()}),t.on("touchend.owlControls mouseup.owlControls",'div[class^="owl"]',function(t){t.preventDefault(),r(this).hasClass("owl-next")?e.next():e.prev()})},buildPagination:function(){var e=this;e.paginationWrapper=r('<div class="owl-pagination"/>'),e.owlControls.append(e.paginationWrapper),e.paginationWrapper.on("touchend.owlControls mouseup.owlControls",".owl-page",function(t){t.preventDefault(),Number(r(this).data("owl-page"))!==e.currentItem&&e.goTo(Number(r(this).data("owl-page")),!0)})},updatePagination:function(){var t=this;if(!1===t.options.pagination)return!1;t.paginationWrapper.html("");for(var e=0,o=t.itemsAmount-t.itemsAmount%t.options.items,s=0;s<t.itemsAmount;s++)if(s%t.options.items==0){if(e+=1,o===s)var i=t.itemsAmount-t.options.items;var n=r("<div/>",{class:"owl-page"}),a=r("<span></span>",{text:!0===t.options.paginationNumbers?e:"",class:!0===t.options.paginationNumbers?"owl-numbers":""});n.append(a),n.data("owl-page",o===s?i:s),n.data("owl-roundPages",e),t.paginationWrapper.append(n)}t.checkPagination()},checkPagination:function(){var o=this;if(!1===o.options.pagination)return!1;o.paginationWrapper.find(".owl-page").each(function(t,e){r(this).data("owl-roundPages")===r(o.$owlItems[o.currentItem]).data("owl-roundPages")&&(o.paginationWrapper.find(".owl-page").removeClass("active"),r(this).addClass("active"))})},checkNavigation:function(){var t=this;if(!1===t.options.navigation)return!1;!1===t.options.rewindNav&&(0===t.currentItem&&0===t.maximumItem?(t.buttonPrev.addClass("disabled"),t.buttonNext.addClass("disabled")):0===t.currentItem&&0!==t.maximumItem?(t.buttonPrev.addClass("disabled"),t.buttonNext.removeClass("disabled")):t.currentItem===t.maximumItem?(t.buttonPrev.removeClass("disabled"),t.buttonNext.addClass("disabled")):0!==t.currentItem&&t.currentItem!==t.maximumItem&&(t.buttonPrev.removeClass("disabled"),t.buttonNext.removeClass("disabled")))},updateControls:function(){var t=this;t.updatePagination(),t.checkNavigation(),t.owlControls&&(t.options.items>=t.itemsAmount?t.owlControls.hide():t.owlControls.show())},destroyControls:function(){this.owlControls&&this.owlControls.remove()},next:function(t){var e=this;if(e.isTransition)return!1;if(e.currentItem+=!0===e.options.scrollPerPage?e.options.items:1,e.currentItem>e.maximumItem+(1==e.options.scrollPerPage?e.options.items-1:0)){if(!0!==e.options.rewindNav)return e.currentItem=e.maximumItem,!1;e.currentItem=0,t="rewind"}e.goTo(e.currentItem,t)},prev:function(t){var e=this;if(e.isTransition)return!1;if(!0===e.options.scrollPerPage&&0<e.currentItem&&e.currentItem<e.options.items?e.currentItem=0:e.currentItem-=!0===e.options.scrollPerPage?e.options.items:1,e.currentItem<0){if(!0!==e.options.rewindNav)return e.currentItem=0,!1;e.currentItem=e.maximumItem,t="rewind"}e.goTo(e.currentItem,t)},goTo:function(t,e,o){var s=this;if(s.isTransition)return!1;if("function"==typeof s.options.beforeMove&&s.options.beforeMove.apply(this,[s.$elem]),t>=s.maximumItem?t=s.maximumItem:t<=0&&(t=0),s.currentItem=s.owl.currentItem=t,!1!==s.options.transitionStyle&&"drag"!==o&&1===s.options.items&&!0===s.browser.support3d)return s.swapSpeed(0),!0===s.browser.support3d?s.transition3d(s.positionsInArray[t]):s.css2slide(s.positionsInArray[t],1),s.afterGo(),s.singleItemTransition(),!1;var i=s.positionsInArray[t];!0===s.browser.support3d?(!(s.isCss3Finish=!1)===e?(s.swapSpeed("paginationSpeed"),setTimeout(function(){s.isCss3Finish=!0},s.options.paginationSpeed)):"rewind"===e?(s.swapSpeed(s.options.rewindSpeed),setTimeout(function(){s.isCss3Finish=!0},s.options.rewindSpeed)):(s.swapSpeed("slideSpeed"),setTimeout(function(){s.isCss3Finish=!0},s.options.slideSpeed)),s.transition3d(i)):!0===e?s.css2slide(i,s.options.paginationSpeed):"rewind"===e?s.css2slide(i,s.options.rewindSpeed):s.css2slide(i,s.options.slideSpeed),s.afterGo()},jumpTo:function(t){var e=this;"function"==typeof e.options.beforeMove&&e.options.beforeMove.apply(this,[e.$elem]),t>=e.maximumItem||-1===t?t=e.maximumItem:t<=0&&(t=0),e.swapSpeed(0),!0===e.browser.support3d?e.transition3d(e.positionsInArray[t]):e.css2slide(e.positionsInArray[t],1),e.currentItem=e.owl.currentItem=t,e.afterGo()},afterGo:function(){var t=this;t.prevArr.push(t.currentItem),t.prevItem=t.owl.prevItem=t.prevArr[t.prevArr.length-2],t.prevArr.shift(0),t.prevItem!==t.currentItem&&(t.checkPagination(),t.checkNavigation(),t.eachMoveUpdate(),!1!==t.options.autoPlay&&t.checkAp()),"function"==typeof t.options.afterMove&&t.prevItem!==t.currentItem&&t.options.afterMove.apply(this,[t.$elem])},stop:function(){this.apStatus="stop",clearInterval(this.autoPlayInterval)},checkAp:function(){"stop"!==this.apStatus&&this.play()},play:function(){var t=this;if(!(t.apStatus="play")===t.options.autoPlay)return!1;clearInterval(t.autoPlayInterval),t.autoPlayInterval=setInterval(function(){t.next(!0)},t.options.autoPlay)},swapSpeed:function(t){var e=this;"slideSpeed"===t?e.$owlWrapper.css(e.addCssSpeed(e.options.slideSpeed)):"paginationSpeed"===t?e.$owlWrapper.css(e.addCssSpeed(e.options.paginationSpeed)):"string"!=typeof t&&e.$owlWrapper.css(e.addCssSpeed(t))},addCssSpeed:function(t){return{"-webkit-transition":"all "+t+"ms ease","-moz-transition":"all "+t+"ms ease","-o-transition":"all "+t+"ms ease",transition:"all "+t+"ms ease"}},removeTransition:function(){return{"-webkit-transition":"","-moz-transition":"","-o-transition":"",transition:""}},doTranslate:function(t){return{"-webkit-transform":"translate3d("+t+"px, 0px, 0px)","-moz-transform":"translate3d("+t+"px, 0px, 0px)","-o-transform":"translate3d("+t+"px, 0px, 0px)","-ms-transform":"translate3d("+t+"px, 0px, 0px)",transform:"translate3d("+t+"px, 0px,0px)"}},transition3d:function(t){this.$owlWrapper.css(this.doTranslate(t))},css2move:function(t){this.$owlWrapper.css({right:t})},css2slide:function(t,e){var o=this;o.isCssFinish=!1,o.$owlWrapper.stop(!0,!0).animate({right:t},{duration:e||o.options.slideSpeed,complete:function(){o.isCssFinish=!0}})},checkBrowser:function(){var t="translate3d(0px, 0px, 0px)",e=p.createElement("div");e.style.cssText="  -moz-transform:"+t+"; -ms-transform:"+t+"; -o-transform:"+t+"; -webkit-transform:"+t+"; transform:"+t;var o=e.style.cssText.match(/translate3d\(0px, 0px, 0px\)/g),s=null!==o&&1===o.length,i="ontouchstart"in l||navigator.msMaxTouchPoints;this.browser={support3d:s,isTouch:i}},moveEvents:function(){!1===this.options.mouseDrag&&!1===this.options.touchDrag||(this.gestures(),this.disabledEvents())},eventTypes:function(){var t=this,e=["s","e","x"];t.ev_types={},!0===t.options.mouseDrag&&!0===t.options.touchDrag?e=["touchstart.owl mousedown.owl","touchmove.owl mousemove.owl","touchend.owl touchcancel.owl mouseup.owl"]:!1===t.options.mouseDrag&&!0===t.options.touchDrag?e=["touchstart.owl","touchmove.owl","touchend.owl touchcancel.owl"]:!0===t.options.mouseDrag&&!1===t.options.touchDrag&&(e=["mousedown.owl","mousemove.owl","mouseup.owl"]),t.ev_types.start=e[0],t.ev_types.move=e[1],t.ev_types.end=e[2]},disabledEvents:function(){this.$elem.on("dragstart.owl",function(t){t.preventDefault()}),this.$elem.on("mousedown.disableTextSelect",function(t){return r(t.target).is("input, textarea, select, option")})},gestures:function(){function o(t){return t.touches?{x:t.touches[0].pageX,y:t.touches[0].pageY}:t.pageX!==m?{x:t.pageX,y:t.pageY}:{x:t.clientX,y:t.clientY}}function i(t){"on"===t?(r(p).on(n.ev_types.move,e),r(p).on(n.ev_types.end,s)):"off"===t&&(r(p).off(n.ev_types.move),r(p).off(n.ev_types.end))}function e(t){t=t.originalEvent||t||l.event;n.newPosX=o(t).x-a.offsetX,n.newPosY=o(t).y-a.offsetY,n.newRelativeX=n.newPosX-a.relativePos,"function"==typeof n.options.startDragging&&!0!==a.dragging&&0!==n.newRelativeX&&(a.dragging=!0,n.options.startDragging.apply(n,[n.$elem])),(8<n.newRelativeX||n.newRelativeX<-8&&!0===n.browser.isTouch)&&(t.preventDefault?t.preventDefault():t.returnValue=!1,a.sliding=!0),(10<n.newPosY||n.newPosY<-10)&&!1===a.sliding&&r(p).off("touchmove.owl");n.newPosX=Math.max(Math.min(n.newPosX,n.newRelativeX/5),n.maximumPixels+n.newRelativeX/5),!0===n.browser.support3d?n.transition3d(n.newPosX):n.css2move(n.newPosX)}function s(e){if((e=e.originalEvent||e||l.event).target=e.target||e.srcElement,!(a.dragging=!1)!==n.browser.isTouch&&n.$owlWrapper.removeClass("grabbing"),n.newRelativeX<0?n.dragDirection=n.owl.dragDirection="right":n.dragDirection=n.owl.dragDirection="left",0!==n.newRelativeX){var t=n.getNewPosition();if(n.goTo(t,!1,"drag"),a.targetElement===e.target&&!0!==n.browser.isTouch){r(e.target).on("click.disable",function(t){t.stopImmediatePropagation(),t.stopPropagation(),t.preventDefault(),r(e.target).off("click.disable")});var o=r._data(e.target,"events").click,s=o.pop();o.splice(0,0,s)}}i("off")}var n=this,a={offsetX:0,offsetY:0,baseElWidth:0,relativePos:0,position:null,minSwipe:null,maxSwipe:null,sliding:null,dargging:null,targetElement:null};n.isCssFinish=!0,n.$elem.on(n.ev_types.start,".owl-wrapper",function(t){if(3===(t=t.originalEvent||t||l.event).which)return!1;if(!(n.itemsAmount<=n.options.items)){if(!1===n.isCssFinish&&!n.options.dragBeforeAnimFinish)return!1;if(!1===n.isCss3Finish&&!n.options.dragBeforeAnimFinish)return!1;!1!==n.options.autoPlay&&clearInterval(n.autoPlayInterval),!0===n.browser.isTouch||n.$owlWrapper.hasClass("grabbing")||n.$owlWrapper.addClass("grabbing"),n.newPosX=0,n.newRelativeX=0,r(this).css(n.removeTransition());var e=r(this).position();a.relativePos=e.right,a.offsetX=o(t).x-e.right,a.offsetY=o(t).y-e.top,i("on"),a.sliding=!1,a.targetElement=t.target||t.srcElement}})},getNewPosition:function(){var t,e=this;return(t=e.closestItem())>e.maximumItem?(e.currentItem=e.maximumItem,t=e.maximumItem):0<=e.newPosX&&(t=0,e.currentItem=0),t},closestItem:function(){var o=this,s=!0===o.options.scrollPerPage?o.pagesInArray:o.positionsInArray,i=o.newPosX,n=null;return r.each(s,function(t,e){i-o.itemWidth/20>s[t+1]&&i-o.itemWidth/20<e&&"right"===o.moveDirection()?(n=e,!0===o.options.scrollPerPage?o.currentItem=r.inArray(n,o.positionsInArray):o.currentItem=t):i+o.itemWidth/20<e&&i+o.itemWidth/20>(s[t+1]||s[t]-o.itemWidth)&&"left"===o.moveDirection()&&(!0===o.options.scrollPerPage?(n=s[t+1]||s[s.length-1],o.currentItem=r.inArray(n,o.positionsInArray)):(n=s[t+1],o.currentItem=t+1))}),o.currentItem},moveDirection:function(){var t;return this.newRelativeX<0?(t="left",this.playDirection="next"):(t="right",this.playDirection="prev"),t},customEvents:function(){var o=this;o.$elem.on("owl.next",function(){o.next()}),o.$elem.on("owl.prev",function(){o.prev()}),o.$elem.on("owl.play",function(t,e){o.options.autoPlay=e,o.play(),o.hoverStatus="play"}),o.$elem.on("owl.stop",function(){o.stop(),o.hoverStatus="stop"}),o.$elem.on("owl.goTo",function(t,e){o.goTo(e)}),o.$elem.on("owl.jumpTo",function(t,e){o.jumpTo(e)})},stopOnHover:function(){var t=this;!0===t.options.stopOnHover&&!0!==t.browser.isTouch&&!1!==t.options.autoPlay&&(t.$elem.on("mouseover",function(){t.stop()}),t.$elem.on("mouseout",function(){"stop"!==t.hoverStatus&&t.play()}))},lazyLoad:function(){var t=this;if(!1===t.options.lazyLoad)return!1;for(var e=0;e<t.itemsAmount;e++){var o=r(t.$owlItems[e]);if("loaded"!==o.data("owl-loaded")){var s=o.data("owl-item"),i=o.find(".lazyOwl");"string"==typeof i.data("src")?(o.data("owl-loaded")===m&&(i.hide(),o.addClass("loading").data("owl-loaded","checked")),(!0!==t.options.lazyFollow||s>=t.currentItem)&&s<t.currentItem+t.options.items&&i.length&&t.lazyPreload(o,i)):o.data("owl-loaded","loaded")}}},lazyPreload:function(t,e){function o(){t.data("owl-loaded","loaded").removeClass("loading"),e.removeAttr("data-src"),"fade"===s.options.lazyEffect?e.fadeIn(400):e.show(),"function"==typeof s.options.afterLazyLoad&&s.options.afterLazyLoad.apply(this,[s.$elem])}var s=this,i=0;if("DIV"===e.prop("tagName")){e.css("background-image","url("+e.data("src")+")");var n=!0}else e[0].src=e.data("src");!function t(){i+=1,s.completeImg(e.get(0))||!0===n?o():i<=100?setTimeout(t,100):o()}()},autoHeight:function(){function e(){var t=r(o.$owlItems[o.currentItem]).height();o.wrapperOuter.css("height",t+"px"),o.wrapperOuter.hasClass("autoHeight")||setTimeout(function(){o.wrapperOuter.addClass("autoHeight")},0)}var o=this,s=r(o.$owlItems[o.currentItem]).find("img");if(s.get(0)!==m){var i=0;!function t(){i+=1,o.completeImg(s.get(0))?e():i<=100?setTimeout(t,100):o.wrapperOuter.css("height","")}()}else e()},completeImg:function(t){return!!t.complete&&(void 0===t.naturalWidth||0!=t.naturalWidth)},onVisibleItems:function(){var t=this;!0===t.options.addClassActive&&t.$owlItems.removeClass("active"),t.visibleItems=[];for(var e=t.currentItem;e<t.currentItem+t.options.items;e++)t.visibleItems.push(e),!0===t.options.addClassActive&&r(t.$owlItems[e]).addClass("active");t.owl.visibleItems=t.visibleItems},transitionTypes:function(t){this.outClass="owl-"+t+"-out",this.inClass="owl-"+t+"-in"},singleItemTransition:function(){var t=this;t.isTransition=!0;var e=t.outClass,o=t.inClass,s=t.$owlItems.eq(t.currentItem),i=t.$owlItems.eq(t.prevItem),n=Math.abs(t.positionsInArray[t.currentItem])+t.positionsInArray[t.prevItem],a=Math.abs(t.positionsInArray[t.currentItem])+t.itemWidth/2;t.$owlWrapper.addClass("owl-origin").css({"-webkit-transform-origin":a+"px","-moz-perspective-origin":a+"px","perspective-origin":a+"px"});var r,l="webkitAnimationEnd oAnimationEnd MSAnimationEnd animationend";i.css((r=n,{position:"relative",right:r+"px"})).addClass(e).on(l,function(){t.endPrev=!0,i.off(l),t.clearTransStyle(i,e)}),s.addClass(o).on(l,function(){t.endCurrent=!0,s.off(l),t.clearTransStyle(s,o)})},clearTransStyle:function(t,e){var o=this;t.css({position:"",right:""}).removeClass(e),o.endPrev&&o.endCurrent&&(o.$owlWrapper.removeClass("owl-origin"),o.endPrev=!1,o.endCurrent=!1,o.isTransition=!1)},owlStatus:function(){var t=this;t.owl={userOptions:t.userOptions,baseElement:t.$elem,userItems:t.$userItems,owlItems:t.$owlItems,currentItem:t.currentItem,prevItem:t.prevItem,visibleItems:t.visibleItems,isTouch:t.browser.isTouch,browser:t.browser,dragDirection:t.dragDirection}},clearEvents:function(){this.$elem.off(".owl owl mousedown.disableTextSelect"),r(p).off(".owl owl"),r(l).off("resize",this.resizer)},unWrap:function(){var t=this;0!==t.$elem.children().length&&(t.$owlWrapper.unwrap(),t.$userItems.unwrap().unwrap(),t.owlControls&&t.owlControls.remove()),t.clearEvents(),t.$elem.attr("style",t.$elem.data("owl-originalStyles")||"").attr("class",t.$elem.data("owl-originalClasses"))},destroy:function(){this.stop(),clearInterval(this.checkVisible),this.unWrap(),this.$elem.removeData()},reinit:function(t){var e=r.extend({},this.userOptions,t);this.unWrap(),this.init(e,this.$elem)},addItem:function(t,e){var o,s=this;return!!t&&(0===s.$elem.children().length?(s.$elem.append(t),s.setVars(),!1):(s.unWrap(),(o=e===m||-1===e?-1:e)>=s.$userItems.length||-1===o?s.$userItems.eq(-1).after(t):s.$userItems.eq(o).before(t),void s.setVars()))},removeItem:function(t){var e;if(0===this.$elem.children().length)return!1;e=t===m||-1===t?-1:t,this.unWrap(),this.$userItems.eq(e).remove(),this.setVars()}};r.fn.owlCarousel=function(e){return this.each(function(){if(!0===r(this).data("owl-init"))return!1;r(this).data("owl-init",!0);var t=Object.create(o);t.init(e,this),r.data(this,"owlCarousel",t)})},r.fn.owlCarousel.options={items:5,itemsCustom:!1,itemsDesktop:[1199,4],itemsDesktopSmall:[979,3],itemsTablet:[768,2],itemsTabletSmall:!1,itemsMobile:[479,1],singleItem:!1,itemsScaleUp:!1,slideSpeed:200,paginationSpeed:800,rewindSpeed:1e3,autoPlay:!1,stopOnHover:!1,navigation:!1,navigationText:["prev","next"],rewindNav:!0,scrollPerPage:!1,pagination:!0,paginationNumbers:!1,responsive:!0,responsiveRefreshRate:200,responsiveBaseWidth:l,baseClass:"owl-carousel",theme:"owl-theme",lazyLoad:!1,lazyFollow:!0,lazyEffect:"fade",autoHeight:!1,jsonPath:!1,jsonSuccess:!1,dragBeforeAnimFinish:!0,mouseDrag:!0,touchDrag:!0,addClassActive:!1,transitionStyle:!1,beforeUpdate:!1,afterUpdate:!1,beforeInit:!1,afterInit:!1,beforeMove:!1,afterMove:!1,afterAction:!1,startDragging:!1,afterLazyLoad:!1}}(jQuery,window,document),$(document).ready(function(){$("#menu-button").click(function(){$("#nav").slideToggle()}),$(".myselect").select2()}),$(".c-m-widget").each(function(){$(this).removeClass("section")}),$("#HTML1").each(function(){$(this).removeAttr("id","none"),$(this).removeAttr("data-version","1"),$(this).removeAttr("class","widget "),$(this).removeAttr("class","HTML "),$(this).addClass("c-m-live-table")}),$(".sidebar-post .c-m-tumb").each(function(){$(".sidebar-post ul li:first-child .c-m-tumb").attr("style",function(t,e){return e.replace("s72-c","w300-h250-p-k-nu")}),$(this).attr("style",function(t,e){return e.replace("s72-c","w145-h100-p-k-nu")})}),$("#sidebar-wrapper .widget h2").each(function(){$(this).replaceWith("<div class='title'>"+$(this).text()+"</div>")}),$("#sidebar-wrapper .widget").each(function(){$(this).removeAttr("data-version","1")}),$(".sidebar-post ul li:first-child .c-m-tumb").each(function(){var t=$(this).attr("href");$.ajax({url:t,type:"get",success:function(t){var e=$(t).find(".post-footer span.post-lable a").text(),o="";o+="<a href='"+$(t).find(".post-footer span.post-lable a").attr("href")+'">'+e+"</a>",$(".sidebar-post ul li .post-lable").html(o)}})}),$("span.video_box").each(function(){var m=$(this).attr("data-label"),t=($(this),$(this).attr("data-no"));$.ajax({url:"/feeds/posts/default/-/"+m+"?alt=json-in-script&max-results="+t,type:"get",dataType:"jsonp",success:function(t){for(var e="",o="",s=0;s<t.feed.entry.length;s++){for(var i=0;i<t.feed.entry[s].link.length;i++)if("alternate"==t.feed.entry[s].link[i].rel){e=t.feed.entry[s].link[i].href;break}var n=t.feed.entry[s].title.$t,a=(t.feed.entry[s].category[0].term,t.feed.entry[s].author[0].name.$t,t.feed.entry[s].content.$t);$("<div>").html(a);try{var r=t.feed.entry[s].media$thumbnail.url.replace("/s72-c/","/w260-h150-p-k-nu/")}catch(t){r="http://4.bp.blogspot.com/-OI0BoYP677M/VZu1TW7a3DI/AAAAAAAAFsE/4BRdE2YFS5A/s1600/noimg.png"}var l=t.feed.entry[s].id.$t.split("-")[2],p=" <nav class='navigation pagination' role='navigation'><div class='nav-links'><a class='prev page-numbers' href='/search/label/"+m+"?&max-results=20' >المزيد</a></div></nav>";o+="<div id='post-"+l+"' class='post-outer col-md-4 col-sm-6 col-xs-6'><div class='inner-content'><div class='post-thumbnail'><a href='"+e+"' title='"+n+"' class='c-m-tumb' rel='bookmark' style='background:url("+r+")no-repeat center center;background-size: cover;'></a></div><div class='post-info details'><a href='"+e+"' title='"+n+"' rel='bookmark'><div class='c-m-Title'>"+n+"</div></a></div></div></div>"}o+="",o+=p,$("#HTML2").each(function(){$(this).removeAttr("id","none"),$(this).removeAttr("data-version","1"),$(this).removeAttr("class","widget "),$(this).removeAttr("class","HTML "),$(this).addClass("c-m-video"),$(this).attr("id","c-m-video")}),$("span.video_box").each(function(){$(this).attr("data-label")==m&&$(this).parent().html(o)})}})}),$("span.channel_box").each(function(){var u=$(this).attr("data-label"),t=($(this),$(this).attr("data-no"));$.ajax({url:"/feeds/posts/default/-/"+u+"?alt=json-in-script&max-results="+t,type:"get",dataType:"jsonp",success:function(t){for(var e="",o="",s=0;s<t.feed.entry.length;s++){for(var i=0;i<t.feed.entry[s].link.length;i++)if("alternate"==t.feed.entry[s].link[i].rel){e=t.feed.entry[s].link[i].href;break}var n=t.feed.entry[s].title.$t,a=t.feed.entry[s].category[0].term,r=(t.feed.entry[s].author[0].name.$t,t.feed.entry[s].content.$t);$("<div>").html(r);try{var l=t.feed.entry[s].media$thumbnail.url.replace("/s72-c/","/w260-h150-p-k-nu/")}catch(t){l="http://4.bp.blogspot.com/-OI0BoYP677M/VZu1TW7a3DI/AAAAAAAAFsE/4BRdE2YFS5A/s1600/noimg.png"}var p=t.feed.entry[s].id.$t.split("-")[2],m="";o+="<div id='post-"+p+"' class='post-outer col-md-3 col-sm-6 col-xs-6'><div class='inner-content'><div class='post-thumbnail'><a href='"+e+"' title='"+n+"' class='c-m-tumb' rel='bookmark' style='' class='c-m-tumb' rel='bookmark' style='background:url("+a+")'><img src='"+l+"' style='position: absolute;'></a></div><div class='post-info details'><a href='"+e+"' title='"+n+"' rel='bookmark'><div class='c-m-Title'>"+n+"</div></a></div></div></div>"}o+="",o+=m,$("#HTML2").each(function(){$(this).removeAttr("id","none"),$(this).removeAttr("data-version","1"),$(this).removeAttr("class","widget "),$(this).removeAttr("class","HTML "),$(this).addClass("c-m-channel"),$(this).attr("id","c-m-channel")}),$("span.channel_box").each(function(){$(this).attr("data-label")==u&&$(this).parent().html(o)})}})}),$("span.slider_related").each(function(){var p=$(this).attr("data-label"),t=($(this),$(this).attr("data-no"));$.ajax({url:"/feeds/posts/default/-/"+p+"?alt=json-in-script&max-results="+t,type:"get",dataType:"jsonp",success:function(t){for(var e="",o="<ul class='rnav'>",s=0;s<t.feed.entry.length;s++){for(var i=0;i<t.feed.entry[s].link.length;i++)if("alternate"==t.feed.entry[s].link[i].rel){e=t.feed.entry[s].link[i].href;break}var n=t.feed.entry[s].title.$t,a=(t.feed.entry[s].category[0].term,t.feed.entry[s].author[0].name.$t,t.feed.entry[s].content.$t);$("<div>").html(a);try{var r=t.feed.entry[s].media$thumbnail.url.replace("/s72-c/","/w260-h150-p-k-nu/")}catch(t){r="http://4.bp.blogspot.com/-OI0BoYP677M/VZu1TW7a3DI/AAAAAAAAFsE/4BRdE2YFS5A/s1600/noimg.png"}var l=t.feed.entry[s].id.$t.split("-")[2];o+="<div id='post-"+l+"' class='post-outer col-md-4 col-sm-6 col-xs-6' style='width: 100% !important;'><div class='inner-content'><div class='post-thumbnail'><a href='"+e+"' title='"+n+"' class='c-m-tumb' rel='bookmark' style='background:url("+r+") no-repeat center center;background-size: cover'></a></div><div class='post-info details'><a href='"+e+"' title='"+n+"' rel='bookmark'><div class='c-m-Title'>"+n+"</div></a></div></div></div>"}o+="</ul>",$(document).ready(function(){$("#related-posts ul").owlCarousel({items:3,navigation:!0,navigationText:["<i id='prev'></i>","<i id='next'></i>"],itemsDesktop:[1e3,3],itemsDesktopSmall:[647,2],itemsTablet:[396,1],itemsMobile:!1,pagination:!1})}),$("span.slider_related").each(function(){$(this).attr("data-label")==p&&$(this).parent().html(o)})}})});
+//]]>
+</script>
+</body>
+</html>
