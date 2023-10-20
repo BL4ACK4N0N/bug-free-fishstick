@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+ <link href="https://fonts.googleapis.com/earlyaccess/droidarabickufi.css?ver=4.9.7" rel="stylesheet">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>مولد جدول المباريات</title>
+ <style>
+* {
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  scroll-behavior: smooth;
+}
+  body {
+   background-color: #0D1440;
+   color: #ffffff;
+   background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiFy-R77GH7nVk2jsoFOEZaI0SPMEIVjyIBQTDd77FEOubpphpFREaoHa3jNJzH249IJqV-Qu0MpOVR_P_7a6HYhzJ0eOOkDQVGy1hBdVj0YhJSDfsk1e1C7SpojTQYU6CZJbchFW5pgcapD5Ab0JBsW3_jMDvSckRb3LAQYvEyzWgSGfRbyq57_H8sA/s389/wcPatternBg.png);
+  }
+
+  h1 {
+   font-size: 36px;
+   font-weight: bold;
+   margin-top: 0;
+  }
+
+  p {
+   font-size: 16px;
+   line-height: 1.5;
+  }
+
+  .all {
+   display: table;
+   border-radius: 20px;
+   background-color: #ffffff14;
+   margin: 40px;
+  }
+
+  .sidebar {
+   float: right;
+   border-radius: 0 20px 20px 0;
+   background-color: #55153c;
+   padding: 10px;
+   height: 110vh;
+   background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiFy-R77GH7nVk2jsoFOEZaI0SPMEIVjyIBQTDd77FEOubpphpFREaoHa3jNJzH249IJqV-Qu0MpOVR_P_7a6HYhzJ0eOOkDQVGy1hBdVj0YhJSDfsk1e1C7SpojTQYU6CZJbchFW5pgcapD5Ab0JBsW3_jMDvSckRb3LAQYvEyzWgSGfRbyq57_H8sA/s389/wcPatternBg.png);
+  }
+
+  .sidebar a {
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: bold;
+   padding: 10px 20px;
+   display: block;
+   border-radius: 20px;
+  }
+
+  .sidebar a:hover {
+   background-color: #c8273f;
+  }
+
+  .content {
+   padding: 10px;
+   margin-right: 255px;
+  }
+
+  .content a {
+   color: #0D1440;
+   font-weight: bold;
+  }
+
+  .content a:hover {
+   color: #0D1440;
+   text-decoration: none;
+  }
+  
+  ::-webkit-scrollbar {
+   width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background-image: -webkit-gradient(linear,left bottom,left top,color-stop(1.00, #c0333673),color-stop(0.20, #c03336e8),color-stop(1.00, #c0333673));
+  }
+ </style>
+</head>
+<body>
+<div class="all">
+ <div class="sidebar">
+  <a href="#">الصفحة الرئيسية</a>
+  <a href="#">معاينة القالب</a>
+  <a href="#">توثيق القالب</a>
+  <a href="#">مولد جدول المباريات</a>
+  <a href="#">مولد مشغل البث المباشر</a>
+  <a href="#">شراء القالب</a>
+ </div>
+
+ <div class="content">
+<center>
+<h1>مولد جدول المباريات - سبورت بلس بريميوم</h1>
+
+<div class="Siash">
+<div class="input-contain">
+<input class="logo_1" placeholder="صورة الفريق الاول" type="text" />
+<input class="team_1" placeholder="اسم الفريق الاول" type="text" /><br>
+<input class="score_1" placeholder=" نتيجة الفريق الأول" type="text" />
+<input class="logo_2" placeholder="صورة الفريق الثاني" type="text" /><br>
+<input class="team_2" placeholder="اسم الفريق الثاني" type="text" />
+<input class="score_2" placeholder=" نتيجة الفريق الثاني" type="text" /><br>
+<input class="matchtime" placeholder="الوقت" type="text" />
+<input class="matchdate" placeholder="التاريخ" type="text" /><br>
+<input class="channel" placeholder="القناة الناقله" type="text" />
+<input class="cup" placeholder="الدوري" type="text" /><br>
+<input class="mic" placeholder="المعلق" type="text" />
+<input class="Link" placeholder=" رابط المباراة" type="text" /><br>
+</div>
+<br />
+<div class="GETS">
+<button class="Get Gen">توليد الكود</button>
+<button class="Get Copy" onclick="copyEvent('Copy')" type="button">نسخ الكود</button>
+<br />
+<textarea readonly='readonly' class="Code" id="Copy" onclick="this.select();"></textarea>
+
+</div>
+</center>
+
+<h2 id="stream-player">طريقة الاستخدام</h2>
+
+  <p>سيسهل عليك المولد عملية تحديث جدول المباريات. فعوض تكويدها من أ إلى ي، ستدخل معطيات المباراة داخل المولد و سيتكلف بتوليد كود المباراة. بعد ذلك سوف تنسخ الكود، و تذهب إلى "التخطيط" > "المباريات" > "تعديل" ثم تضعه في المكان المناسب، أي إن كان الكود خاص باليوم فتضعه بين وسمي &lt;!--بداية مباريات اليوم--&gt; و &lt;!--نهاية مباريات اليوم--&gt; و نفس الشيء بالنسبة لمباريات البارحة و الغد.</p>
+
+ </div>
+</div>
+
+<script>//<![CDATA[
+debugger;
+        document.querySelector('button.Get').addEventListener('click',()=>{
+let all =`  <li class="c-m_sports_events-event_item">
+<a href="${document.querySelector('input.Link').value}">
+<div class="c-m_sports_events-event_mask">
+<div class="event_mask_inner">
+<div class="h3 c-m_sports_events-event_mask_inner_text"> شاهد الاهداف</div>
+</div>
+</div>
+<div class="event_inner">
+<div class="team-aria team-first">
+<div class="c-m-team_logo"> <img alt="${document.querySelector('input.team_1').value}" class="imgclub" height="100" src="${document.querySelector('input.logo_1').value}" width="100" /></div>
+<div class="c-m_sports_events-team_title"> ${document.querySelector('input.team_1').value}</div>
+</div>
+<div class="event_title_wrapper">
+<div class="events-team_score numb"> ${document.querySelector('input.score_1').value} </div>
+<div class="event_status_inner_coming">
+<div class="none-class">  ${document.querySelector('input.matchtime').value}</div>
+</div>
+<div class="events-team_score numb"> ${document.querySelector('input.score_2').value} </div>
+</div>
+<div class="team-aria team-second">
+<div class="c-m-team_logo"> <img alt="${document.querySelector('input.team_2').value}" class="imgclub" src="${document.querySelector('input.logo_2').value}" height="100" width="100" /></div>
+<div class="h2 c-m_sports_events-team_title"> ${document.querySelector('input.team_2').value}</div>
+</div>
+</div>
+<div class="events-info"> <span class="mic"><i class="fa-solid fa-microphone" style="color: #BF1736;"></i>${document.querySelector('input.mic').value}</span><span class="tv hidden-xs hidden-sm"><i aria-hidden="true" class="fa fa-television"></i>${document.querySelector('input.channel').value}</span><span class="cup"><i aria-hidden="true" class="fa fa-trophy"></i>${document.querySelector('input.cup').value}</span></div>
+</a>
+</li>`;
+document.querySelector('.Code').innerHTML=all;
+});
+
+
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+window.addEventListener('keydown', function(event) {
+  // Prevent all Meta+key combinations except Meta+v, Meta+a, Meta+c, Meta+x
+  if (event.metaKey && !(event.keyCode === 86 || event.keyCode === 67 || event.keyCode === 65 || event.keyCode === 88)) {
+    event.preventDefault();
+  }
+
+  // Prevent F12
+  if (event.keyCode === 123) {
+    event.preventDefault();
+  }
+});
+
+window.addEventListener('contextmenu', function(event) {
+  // Prevent right click
+  event.preventDefault();
+});
+
+//]]></script>
+<style>textarea.Code { width: 80%; margin: 4px 0; text-align: center; border-radius: 20px; border: 3px solid #921e3b; padding: 10px; height: 200px;} input{ margin: 4px 0; text-align: center; border-radius: 20px; border: 3px solid #921e3b; padding: 10px; } button{ margin: 4px 0; text-align: center; border-radius: 20px; border: 0; padding: 10px; } .Gen{ background-color: #c8273f; border: 1px solid #c8273f; color: white; padding: 10px; cursor: pointer } .Copy{   background-color: #921e3b; border: 1px solid #921e3b; color: white; padding: 10px; cursor: pointer }</style>
+
+</body></html>

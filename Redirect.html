@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+ <link href="https://fonts.googleapis.com/earlyaccess/droidarabickufi.css?ver=4.9.7" rel="stylesheet">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>إعادة التوجيه</title>
+ <style>
+* {
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  scroll-behavior: smooth;
+}
+  body {
+   background-color: #0D1440;
+   color: #ffffff;
+   background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiFy-R77GH7nVk2jsoFOEZaI0SPMEIVjyIBQTDd77FEOubpphpFREaoHa3jNJzH249IJqV-Qu0MpOVR_P_7a6HYhzJ0eOOkDQVGy1hBdVj0YhJSDfsk1e1C7SpojTQYU6CZJbchFW5pgcapD5Ab0JBsW3_jMDvSckRb3LAQYvEyzWgSGfRbyq57_H8sA/s389/wcPatternBg.png);
+  }
+
+  h1 {
+   font-size: 36px;
+   font-weight: bold;
+   margin-top: 0;
+  }
+
+  p {
+   font-size: 16px;
+   line-height: 1.5;
+  }
+
+  .all {
+   display: table;
+   border-radius: 20px;
+   background-color: #ffffff14;
+   margin: 40px;
+  }
+
+  .sidebar {
+   float: right;
+   border-radius: 0 20px 20px 0;
+   background-color: #55153c;
+   padding: 10px;
+   height: 70vh;
+   background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiFy-R77GH7nVk2jsoFOEZaI0SPMEIVjyIBQTDd77FEOubpphpFREaoHa3jNJzH249IJqV-Qu0MpOVR_P_7a6HYhzJ0eOOkDQVGy1hBdVj0YhJSDfsk1e1C7SpojTQYU6CZJbchFW5pgcapD5Ab0JBsW3_jMDvSckRb3LAQYvEyzWgSGfRbyq57_H8sA/s389/wcPatternBg.png);
+  }
+
+  .sidebar a {
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: bold;
+   padding: 10px 20px;
+   display: block;
+   border-radius: 20px;
+  }
+
+  .sidebar a:hover {
+   background-color: #c8273f;
+  }
+
+  .content {
+   padding: 10px;
+   margin-right: 255px;
+  }
+
+  .content a {
+   color: #0D1440;
+   font-weight: bold;
+  }
+
+  .content a:hover {
+   color: #0D1440;
+   text-decoration: none;
+  }
+
+  #countdown {
+    font-size: 20px;
+    color: white;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0px;
+    background: #55153c;
+    }
+  
+  ::-webkit-scrollbar {
+   width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background-image: -webkit-gradient(linear,left bottom,left top,color-stop(1.00, #c0333673),color-stop(0.20, #c03336e8),color-stop(1.00, #c0333673));
+  }
+ </style>
+</head>
+<body>
+<div class="all">
+ <div class="sidebar">
+  <a href="#">الصفحة الرئيسية</a>
+  <a href="#">معاينة القالب</a>
+  <a href="#">توثيق القالب</a>
+  <a href="#">مولد جدول المباريات</a>
+  <a href="#">مولد مشغل البث المباشر</a>
+  <a href="#">شراء القالب</a>
+ </div>
+
+ <div class="content">
+
+  <center><h1>يبدو أنك تحاول استعمال القالب دون شرائه !</h1></center>
+
+  <li>نتفهم رغبتك في استعمال هذا القالب، و هذا أمر جيد، لكن استخدامه دون شرائه أمر مضر بمطوري القالب. لو كان بوسعنا نشره مجانا لفعلنا ذلك، لكن ثمنه الرمزي يمكننا من تسديد التكاليف و بهذا يستفيد كلا الطرفين، المشتري و البائع ! ألا يبدو هذا عادلا ؟!</li>
+<center>
+  <div id="countdown">20 ثواني متبقية لإعادة التوجيه</div>
+
+</center>
+
+ </div>
+</div>
+<script>
+debugger;
+    // Set the redirect link
+    var redirectLink = "#";
+
+    // Start the countdown
+    var countdown = 20;
+    var interval = setInterval(function() {
+      countdown--;
+      document.getElementById("countdown").innerHTML = countdown + " ثواني متبقية لإعادة التوجيه";
+
+      // If the countdown reaches 0, redirect the user
+      if (countdown === 0) {
+        clearInterval(interval);
+        window.location.href = redirectLink;
+      }
+    }, 1000);
+window.addEventListener('keydown', function(event) {
+  // Prevent all Ctrl+key combinations and Meta+key combinations
+  if (event.ctrlKey || event.metaKey) {
+    event.preventDefault();
+  }
+
+  // Prevent F12
+  if (event.keyCode === 123) {
+    event.preventDefault();
+  }
+});
+
+window.addEventListener('contextmenu', function(event) {
+  // Prevent right click
+  event.preventDefault();
+});</script>
+</body></html>

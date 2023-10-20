@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+ <link href="https://fonts.googleapis.com/earlyaccess/droidarabickufi.css?ver=4.9.7" rel="stylesheet">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>مولد لمشغل البث المباشر</title>
+ <style>
+* {
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  scroll-behavior: smooth;
+}
+  body {
+   background-color: #0D1440;
+   color: #ffffff;
+   background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiFy-R77GH7nVk2jsoFOEZaI0SPMEIVjyIBQTDd77FEOubpphpFREaoHa3jNJzH249IJqV-Qu0MpOVR_P_7a6HYhzJ0eOOkDQVGy1hBdVj0YhJSDfsk1e1C7SpojTQYU6CZJbchFW5pgcapD5Ab0JBsW3_jMDvSckRb3LAQYvEyzWgSGfRbyq57_H8sA/s389/wcPatternBg.png);
+  }
+
+  h1 {
+   font-size: 36px;
+   font-weight: bold;
+   margin-top: 0;
+  }
+
+  p {
+   font-size: 16px;
+   line-height: 1.5;
+  }
+
+  .all {
+   display: table;
+   border-radius: 20px;
+   background-color: #ffffff14;
+   margin: 40px;
+  }
+
+  .sidebar {
+   float: right;
+   border-radius: 0 20px 20px 0;
+   background-color: #55153c;
+   padding: 10px;
+   height: 103vh;
+   background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiFy-R77GH7nVk2jsoFOEZaI0SPMEIVjyIBQTDd77FEOubpphpFREaoHa3jNJzH249IJqV-Qu0MpOVR_P_7a6HYhzJ0eOOkDQVGy1hBdVj0YhJSDfsk1e1C7SpojTQYU6CZJbchFW5pgcapD5Ab0JBsW3_jMDvSckRb3LAQYvEyzWgSGfRbyq57_H8sA/s389/wcPatternBg.png);
+  }
+
+  .sidebar a {
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: bold;
+   padding: 10px 20px;
+   display: block;
+   border-radius: 20px;
+  }
+
+  .sidebar a:hover {
+   background-color: #c8273f;
+  }
+
+  .content {
+   padding: 10px;
+   margin-right: 255px;
+  }
+
+  .content a {
+   color: #0D1440;
+   font-weight: bold;
+  }
+
+  .content a:hover {
+   color: #0D1440;
+   text-decoration: none;
+  }
+  
+  ::-webkit-scrollbar {
+   width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background-image: -webkit-gradient(linear,left bottom,left top,color-stop(1.00, #c0333673),color-stop(0.20, #c03336e8),color-stop(1.00, #c0333673));
+  }
+ </style>
+</head>
+<body>
+<div class="all">
+ <div class="sidebar">
+  <a href="#">الصفحة الرئيسية</a>
+  <a href="#">معاينة القالب</a>
+  <a href="#">توثيق القالب</a>
+  <a href="#">مولد جدول المباريات</a>
+  <a href="#">مولد مشغل البث المباشر</a>
+  <a href="#">شراء القالب</a>
+ </div>
+
+ <div class="content">
+<center>
+<h1>مولد لمشغل البث المباشر - سبورت بلس بريميوم</h1>
+
+<div class="media-generator">
+  <select class="media-type" name="media-type">
+    <option value="embed-video">تضمين فيديو</option>
+    <option value="hls-player">مشغل HLS</option>
+  </select>
+
+  <input class="media-url" type="text" placeholder="ضع الرابط هنا">
+
+  <button class="Get Gen" type="button" onclick="generateMediaScript()">توليد الكود</button>
+
+  <div class="script-generator">
+    <textarea class="Code" readonly></textarea>
+  </div>
+  <button class="Get Copy" type="button" class="copy-button" onclick="copyScript()">نسخ الكود</button>
+</div>
+</center>
+<h2 id="stream-player">طريقة الاستخدام</h2>
+
+  <p>و بغرض تسهيل المأمورية، تم إنشاء مولد لمشغل البث المباشر. فعوضا عن كتابة كود تضمين أو كود المشغل كاملا، تصبح العملية عملية نسخ/لسق، ألا يوجد أسهل من ذلك ؟!
+و لذلك، فعليك فتح المولد، ثم تختار نوعية الفيديو، فإن كان بثًا مباشرًا عن طريق رابط "m3u8" مثلا، يجب عليك اختيار "مشغل HLS"، ثم إدخال الرابط و الضغط على "توليد" و نسخ/لسق داخل المدونة، هذا سيقوم بإنشاء مشغل جديد للبث.
+أما إن كان عبارة عن فيديو موجود مسبقا (فيديو يوتيوب مثلا)، فعليك إختيار "تضمين فيديو"،ثم وضع رابط تضمين الفيديو، ثم الضغط على "توليد" و نسخ/لسق داخل مدونتك، هذا سيقوم بتضمين الفيديو داخل المدونة.</p>
+<style>textarea.Code { width: 80%; margin: 4px 0; text-align: center; border-radius: 20px; border: 3px solid #921e3b; padding: 10px; height: 200px;} input{ margin: 4px 0; text-align: center; border-radius: 20px; border: 3px solid #921e3b; padding: 10px } button{ margin: 4px 0; text-align: center; border-radius: 20px; border: 0 } .Gen{ background-color: #c8273f; border: 1px solid #c8273f; color: white; cursor: pointer; padding: 10px; } .Copy{   background-color: #921e3b; border: 1px solid #921e3b; color: white; cursor: pointer; padding: 10px; } .media-type{ border-radius: 20px } .media-generator{ padding: 10px; }</style>
+ </div>
+</div>
+<script>
+debugger;
+window.addEventListener('keydown', function(event) {
+  // Prevent all Meta+key combinations except Meta+v, Meta+a, Meta+c, Meta+x
+  if (event.metaKey && !(event.keyCode === 86 || event.keyCode === 67 || event.keyCode === 65 || event.keyCode === 88)) {
+    event.preventDefault();
+  }
+
+  // Prevent F12
+  if (event.keyCode === 123) {
+    event.preventDefault();
+  }
+});
+
+window.addEventListener('contextmenu', function(event) {
+  // Prevent right click
+  event.preventDefault();
+});
+</script>
+<script src="main.js"></script>
+</body></html>
